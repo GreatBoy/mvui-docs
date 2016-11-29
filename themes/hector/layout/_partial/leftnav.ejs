@@ -1,0 +1,22 @@
+<aside id="leftnav"<% if (theme.leftnav === 'bottom'){ %> class="outer"<% } %>>
+    
+    <% var sortCategory = {'Summary':'0','Basic':'1','Form':'2','Chart':'3','View':'4','Other':'5'};%>
+    <% var newCategories = [];%>
+    <% site.categories.each(function(category){ newCategories[sortCategory[category.name]] = category; }) %>
+
+    
+    <% newCategories.forEach(function(category){ %>
+        <div class="widget-wrap">
+            <div class="widget-title"><%=category.name%></div>
+            <div class="widget">
+                <ul>
+                    <% site.posts.each(function(post){ %>
+                        <%if (category.name == post.categories.data[0].name) { %>
+                        <li><a href="/<%=post.path%>"><%=post.title%></a></li>
+                        <% } %>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    <% }) %>
+</aside>

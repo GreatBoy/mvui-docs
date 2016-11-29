@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>pullrefresh 下拉刷新 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pullrefresh 下拉刷新">
+<meta property="og:url" content="http://yoursite.com/Other/pullrefresh/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgC">
+<meta property="og:updated_time" content="2016-10-28T03:38:31.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="pullrefresh 下拉刷新">
+<meta name="twitter:description" content="pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgC">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  <style>
+    #mobile-nav{
+      display: none;
+    }
+    body {
+      background: #edf2f6;
+      font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #525252;
+        padding: 15px;
+        -webkit-text-size-adjust: none
+    }
+
+    .hljs-tag {
+        color: #007aff;
+    }
+
+    .hljs-attribute {
+        color: #e96900
+    }
+
+    .hljs-value {
+        color: #42b983
+    }
+
+    .hljs-keyword {
+        color: #e96900
+    }
+
+    .hljs-string {
+        color: #42b983
+    }
+
+    .hljs-comment {
+        color: #b3b3b3
+    }
+
+    .hljs-operator .hljs-comment {
+        color: #525252
+    }
+
+    .hljs-regexp {
+        color: #af7dff
+    }
+
+    .hljs-built_in {
+        color: #2db7f5
+    }
+
+    .css .hljs-class {
+        color: #e96900
+    }
+
+    .css .hljs-number,.javascript .hljs-number {
+        color: #fc1e70
+    }
+
+    .css .hljs-attribute {
+        color: #af7dff
+    }
+
+    .css .hljs-important {
+        color: red
+    }
+
+    .javascript .hljs-literal {
+        color: #fc1e70
+    }
+
+    pre {
+        padding: 0;
+        margin: 0
+    }
+
+    code {
+        display: inline-block;
+        background: #f7f7f7;
+        font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+        margin: 0 3px;
+        padding: 1px 6px;
+        border-radius: 3px;
+        color: #777;
+        font-size: 12px;
+        border: 1px solid #e9e9e9
+    }
+
+    pre code {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent
+    }
+
+    pre.bg code {
+        background: #f7f7f7
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+
+      <header id="header_new">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <div id="main-logo">
+        <a href="/"><img class="main-logo-img" src="/images/mvui/Mvui-02.png"/></a>
+        <svg height="0" id="obturateur1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+             <path d="M 5 50 q 15 -50 25 0 q 25 -50 35 0 M 60 0 q 70 50 60 0" stroke="#42b983" stroke-width="3" fill="none" />
+        </svg>
+
+      </div>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/Summary/desc/">起步</a>
+        
+          <a class="main-nav-link" href="/Basic/icon/">组件</a>
+        
+          <a class="main-nav-link" href="/example">示例</a>
+        
+          <a class="main-nav-link" href="https://github.com/GreatBoy/mvui">github</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer  leftnav_bg">
+        <section id="main">
+          <div class="main-margin-right">
+            <article id="post-pullrefresh" class="article article-type-post" itemscope itemprop="blogPost">
+  <div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="pullrefresh-下拉刷新"><a href="#pullrefresh-下拉刷新" class="headerlink" title="pullrefresh 下拉刷新"></a>pullrefresh 下拉刷新</h1><h2 id="通用参数"><a href="#通用参数" class="headerlink" title="通用参数"></a>通用参数</h2><h6 id="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"><a href="#所有组件均支持class和style属性，class可以是vue变量也可以是字符串" class="headerlink" title="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"></a>所有组件均支持class和style属性，class可以是vue变量也可以是字符串</h6><h6 id="注意：变量需要在class前面加冒号（：），-示例子"><a href="#注意：变量需要在class前面加冒号（：），-示例子" class="headerlink" title="注意：变量需要在class前面加冒号（：）， 示例子"></a>注意：变量需要在class前面加冒号（：）， 示例子</h6><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgColor（背景环颜色）</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><pre><code class="html">&lt;template&gt;
+   &lt;Circle :percent.sync=&quot;10&quot; :stroke-width=&quot;15&quot; stroke-color=&quot;#ff4081&quot;&gt;&lt;/Circle&gt; 
+&lt;/template&gt;
+&lt;script&gt;
+import {
+    Circle
+} from &#39;mvui&#39;;
+export default {
+    components: {
+        Circle,
+    }
+} 
+&lt;/script&gt;
+</code></pre>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Icon props</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">默认值</th>
+<th style="text-align:left">可选值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">选填，类名（可以设置icon）</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">选填，内联样式,自由设置样式</td>
+<td style="text-align:left">[String,Object]</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">percent</td>
+<td style="text-align:left">必填，百分比</td>
+<td style="text-align:left">Num</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0-100</td>
+</tr>
+<tr>
+<td style="text-align:left">size</td>
+<td style="text-align:left">选填，尺寸（单位rem）</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">0.5</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">stroke-width</td>
+<td style="text-align:left">选填，进度环宽度</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">stroke-color</td>
+<td style="text-align:left">选填，进度环颜色</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">#007aff</td>
+<td style="text-align:left">任意颜色</td>
+</tr>
+<tr>
+<td style="text-align:left">stroke-linecap</td>
+<td style="text-align:left">选填，环顶端形状</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">round</td>
+<td style="text-align:left">round(圆)，square（方）</td>
+</tr>
+<tr>
+<td style="text-align:left">stroke-width</td>
+<td style="text-align:left">选填，背景环宽度</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">任意数值</td>
+</tr>
+<tr>
+<td style="text-align:left">stroke-color</td>
+<td style="text-align:left">选填，背景环颜色</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">#ecf1f4</td>
+<td style="text-align:left">任意颜色</td>
+</tr>
+</tbody>
+</table>
+<h2 id="右侧示例代码"><a href="#右侧示例代码" class="headerlink" title="右侧示例代码"></a>右侧示例代码</h2><h3 id="默认形状"><a href="#默认形状" class="headerlink" title="默认形状"></a>默认形状</h3><pre><code class="html">&lt;template&gt;
+    &lt;div class=&quot;body-wrapper&quot;&gt;
+        &lt;Hometitle&gt;Circle&lt;/Hometitle&gt;
+        &lt;div class=&quot;wrapper-example&quot;&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;默认cricle&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot;&gt;&lt;/Circle&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;进度环顶端的形状&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot; stroke-linecap=&quot;square&quot;&gt;&lt;/Circle&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/Circle&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;背景环宽度、颜色&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot; :bg-width=&quot;5&quot; bg-color=&quot;#7a67ee&quot;&gt;&lt;/Circle&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot; :bg-width=&quot;15&quot; bg-color=&quot;#fd6131&quot;&gt;&lt;/Circle&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;进度环宽度、颜色&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot; :stroke-width=&quot;5&quot; stroke-color=&quot;#10c0d8&quot;&gt;&lt;/Circle&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot; :stroke-width=&quot;15&quot; stroke-color=&quot;#ff4081&quot;&gt;&lt;/Circle&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;进度环文本&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Circle :percent.sync=&quot;percent&quot;&gt;
+                        润度
+                    &lt;/Circle&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;控制进度环&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;div&gt;
+                        &lt;Button @click=&quot;add&quot; class=&quot;progress-btn-example&quot; shape=&quot;round&quot;&gt;增加&lt;/Button&gt;
+                        &lt;Button @click=&quot;minus&quot; class=&quot;progress-btn-example&quot; shape=&quot;round&quot;&gt;减少&lt;/Button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Hometitle from &#39;./common/hometitle.vue&#39;;
+import {
+    Circle,
+    Button
+} from &#39;mvui&#39;;
+export default {
+    components: {
+        Hometitle,
+        Circle,
+        Button
+    },
+    data() {
+        return {
+            percent: 10,
+        }
+    },
+    methods: {
+        add() {
+            if (this.percent &lt; 100) {
+                this.percent = this.percent + 10;
+            }
+        },
+        minus() {
+            if (this.percent &gt; 0) {
+                this.percent = this.percent - 10;
+            }
+        }
+    }
+}
+&lt;/script&gt;
+&lt;style lang=&quot;less&quot;&gt;
+.click-btn {
+    cursor: pointer;
+}
+&lt;/style&gt;
+</code></pre>
+
+      
+    </div>
+  </div>
+  
+    
+  
+</article>
+
+
+          </div>
+        </section>
+        
+          <div id="main-right">
+            <div id="main-right-iframe">
+              <iframe src="http://localhost:8080/#!/pullrefresh?hidetitle=true"></iframe>
+            </div>
+          </div>
+        
+        
+          <aside id="leftnav">
+    
+        <div class="widget-wrap">
+            <div class="widget-title">View</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                        <li><a href="/View/alert/">Alert 弹框</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/collapse/">Collapse 折叠面板</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/modal/">Modal 模态框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/tip/">Tip 提示</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Basic</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                        <li><a href="/Basic/button/">Button 按钮</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Basic/icon/">Icon 图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Chart</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Chart/circle/">Circle 进度环</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Chart/progress/">Progress 进度条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Summary</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/desc/">mVui介绍</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/log/">更新日志</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/standard/">规范</a></li>
+                        
+                    
+                        
+                        <li><a href="/Summary/start/">起步</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Other</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/gotop/">gotop 回到顶部</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/loadding/">loadding 加载图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/pullrefresh/">pullrefresh 下拉刷新</a></li>
+                        
+                    
+                        
+                        <li><a href="/Other/pullload/">pullload 下拉加载</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+</aside>
+
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      社区<br/>
+      <a href="">github</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/Summary/desc/" class="mobile-nav-link">起步</a>
+  
+    <a href="/Basic/icon/" class="mobile-nav-link">组件</a>
+  
+    <a href="/example" class="mobile-nav-link">示例</a>
+  
+    <a href="https://github.com/GreatBoy/mvui" class="mobile-nav-link">github</a>
+  
+</nav>
+    
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/js/vivus.min.js"></script>
+<script src="/js/highlight.min.js"></script>
+<script>
+  // highlight
+ hljs.initHighlightingOnLoad();
+</script>
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

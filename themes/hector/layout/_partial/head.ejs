@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <% if (theme.rss){ %>
+    <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+  <% if (theme.favicon){ %>
+      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <% } %>
+  <% if (config.highlight.enable){ %>
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <% } %>
+  <%- css('css/style') %>
+  <%- partial('google-analytics') %>
+  <style>
+    #main-right iframe{
+      height: 512px;
+    }
+    #mobile-nav{
+      display: none;
+    }
+    body {
+      background: #edf2f6;
+      font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #525252;
+        padding: 15px;
+        -webkit-text-size-adjust: none
+    }
+
+    .hljs-tag {
+        color: #007aff;
+    }
+
+    .hljs-attribute {
+        color: #e96900
+    }
+
+    .hljs-value {
+        color: #42b983
+    }
+
+    .hljs-keyword {
+        color: #e96900
+    }
+
+    .hljs-string {
+        color: #42b983
+    }
+
+    .hljs-comment {
+        color: #b3b3b3
+    }
+
+    .hljs-operator .hljs-comment {
+        color: #525252
+    }
+
+    .hljs-regexp {
+        color: #af7dff
+    }
+
+    .hljs-built_in {
+        color: #2db7f5
+    }
+
+    .css .hljs-class {
+        color: #e96900
+    }
+
+    .css .hljs-number,.javascript .hljs-number {
+        color: #fc1e70
+    }
+
+    .css .hljs-attribute {
+        color: #af7dff
+    }
+
+    .css .hljs-important {
+        color: red
+    }
+
+    .javascript .hljs-literal {
+        color: #fc1e70
+    }
+
+    pre {
+        padding: 0;
+        margin: 0
+    }
+
+    code {
+        display: inline-block;
+        background: #f7f7f7;
+        font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+        margin: 0 3px;
+        padding: 1px 6px;
+        border-radius: 3px;
+        color: #777;
+        font-size: 12px;
+        border: 1px solid #e9e9e9
+    }
+
+    pre code {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent
+    }
+
+    pre.bg code {
+        background: #f7f7f7
+    }
+
+  </style>
+</head>

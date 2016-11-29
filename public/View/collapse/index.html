@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Collapse 折叠面板 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Collapse 折叠面板通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子&amp;lt;Button class=&amp;quot;mv-btn-primary&amp;quot;&amp;gt;primary&amp;lt;/Button&amp;gt;
+
+概述button 可以自定义通用属性class和style，以及disabled（是否可用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Collapse 折叠面板">
+<meta property="og:url" content="http://yoursite.com/View/collapse/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Collapse 折叠面板通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子&amp;lt;Button class=&amp;quot;mv-btn-primary&amp;quot;&amp;gt;primary&amp;lt;/Button&amp;gt;
+
+概述button 可以自定义通用属性class和style，以及disabled（是否可用">
+<meta property="og:updated_time" content="2016-10-28T03:06:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Collapse 折叠面板">
+<meta name="twitter:description" content="Collapse 折叠面板通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子&amp;lt;Button class=&amp;quot;mv-btn-primary&amp;quot;&amp;gt;primary&amp;lt;/Button&amp;gt;
+
+概述button 可以自定义通用属性class和style，以及disabled（是否可用">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  <style>
+    #mobile-nav{
+      display: none;
+    }
+    body {
+      background: #edf2f6;
+      font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #525252;
+        padding: 15px;
+        -webkit-text-size-adjust: none
+    }
+
+    .hljs-tag {
+        color: #007aff;
+    }
+
+    .hljs-attribute {
+        color: #e96900
+    }
+
+    .hljs-value {
+        color: #42b983
+    }
+
+    .hljs-keyword {
+        color: #e96900
+    }
+
+    .hljs-string {
+        color: #42b983
+    }
+
+    .hljs-comment {
+        color: #b3b3b3
+    }
+
+    .hljs-operator .hljs-comment {
+        color: #525252
+    }
+
+    .hljs-regexp {
+        color: #af7dff
+    }
+
+    .hljs-built_in {
+        color: #2db7f5
+    }
+
+    .css .hljs-class {
+        color: #e96900
+    }
+
+    .css .hljs-number,.javascript .hljs-number {
+        color: #fc1e70
+    }
+
+    .css .hljs-attribute {
+        color: #af7dff
+    }
+
+    .css .hljs-important {
+        color: red
+    }
+
+    .javascript .hljs-literal {
+        color: #fc1e70
+    }
+
+    pre {
+        padding: 0;
+        margin: 0
+    }
+
+    code {
+        display: inline-block;
+        background: #f7f7f7;
+        font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+        margin: 0 3px;
+        padding: 1px 6px;
+        border-radius: 3px;
+        color: #777;
+        font-size: 12px;
+        border: 1px solid #e9e9e9
+    }
+
+    pre code {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent
+    }
+
+    pre.bg code {
+        background: #f7f7f7
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+
+      <header id="header_new">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <div id="main-logo">
+        <a href="/"><img class="main-logo-img" src="/images/mvui/Mvui-02.png"/></a>
+        <svg height="0" id="obturateur1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+             <path d="M 5 50 q 15 -50 25 0 q 25 -50 35 0 M 60 0 q 70 50 60 0" stroke="#42b983" stroke-width="3" fill="none" />
+        </svg>
+
+      </div>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/Summary/desc/">起步</a>
+        
+          <a class="main-nav-link" href="/Basic/icon/">组件</a>
+        
+          <a class="main-nav-link" href="/example">示例</a>
+        
+          <a class="main-nav-link" href="https://github.com/GreatBoy/mvui">github</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer  leftnav_bg">
+        <section id="main">
+          <div >
+            <article id="post-collapse" class="article article-type-post" itemscope itemprop="blogPost">
+  <div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Collapse-折叠面板"><a href="#Collapse-折叠面板" class="headerlink" title="Collapse 折叠面板"></a>Collapse 折叠面板</h1><h2 id="通用参数"><a href="#通用参数" class="headerlink" title="通用参数"></a>通用参数</h2><h6 id="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"><a href="#所有组件均支持class和style属性，class可以是vue变量也可以是字符串" class="headerlink" title="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"></a>所有组件均支持class和style属性，class可以是vue变量也可以是字符串</h6><h6 id="注意：变量需要在class前面加冒号（：），-示例子"><a href="#注意：变量需要在class前面加冒号（：），-示例子" class="headerlink" title="注意：变量需要在class前面加冒号（：）， 示例子"></a>注意：变量需要在class前面加冒号（：）， 示例子</h6><pre><code class="html">&lt;Button class=&quot;mv-btn-primary&quot;&gt;primary&lt;/Button&gt;
+</code></pre>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>button 可以自定义通用属性class和style，以及disabled（是否可用），type（按钮类型），shape（按钮形状），plain（是否无背景色），icon（icon种类），iconStyle（icon样式）</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>使用Icon组件只需要指定图标的class即可，示例代码</p>
+<pre><code class="html">&lt;Button&gt;&lt;/Button&gt;
+</code></pre>
+<p>渲染后为</p>
+<pre><code class="html">&lt;button class=&quot;mv-btn&quot;&gt;&lt;/button&gt;
+</code></pre>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Icon props</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">默认值</th>
+<th style="text-align:left">可选值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">选填，类名（可以设置icon）</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">选填，内联样式,自由设置样式</td>
+<td style="text-align:left">[String,Object]</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">disabled</td>
+<td style="text-align:left">选填，系统功能是否可用</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">disabled</td>
+</tr>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">选填，系统功能按钮类型</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">submit,button,reset</td>
+</tr>
+<tr>
+<td style="text-align:left">shape</td>
+<td style="text-align:left">选填，按钮形状，默认方形</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">round</td>
+</tr>
+<tr>
+<td style="text-align:left">plain</td>
+<td style="text-align:left">选填，是否无背景色</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">true,false</td>
+</tr>
+<tr>
+<td style="text-align:left">icon</td>
+<td style="text-align:left">选填，图标类名</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意图标类名</td>
+</tr>
+<tr>
+<td style="text-align:left">iconStyle</td>
+<td style="text-align:left">选填，图标样式</td>
+<td style="text-align:left">[Object, String]</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+</tbody>
+</table>
+<h2 id="右侧示例代码"><a href="#右侧示例代码" class="headerlink" title="右侧示例代码"></a>右侧示例代码</h2><h3 id="默认形状"><a href="#默认形状" class="headerlink" title="默认形状"></a>默认形状</h3><pre><code class="html">&lt;template&gt;
+    &lt;Button&gt;方形&lt;/Button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    import { Button } from &#39;mvui&#39;;
+    export default{   
+        components: { 
+            Button
+        }
+    }
+&lt;/script&gt;
+</code></pre>
+<h3 id="形状控制"><a href="#形状控制" class="headerlink" title="形状控制"></a>形状控制</h3><pre><code class="html">&lt;template&gt;
+    &lt;Button shape=&quot;round&quot;&gt;圆形&lt;/Button&gt;
+    &lt;Button shape=&quot;round&quot; disabled=&quot;disabled&quot;&gt;圆形&lt;/Button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    import { Button } from &#39;mvui&#39;;
+    export default{   
+        components: { 
+            Button
+        }
+    }
+&lt;/script&gt;
+</code></pre>
+<h3 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h3><pre><code class="html">&lt;template&gt;
+    &lt;Button class=&quot;mv-btn-primary&quot; type=&quot;submit&quot;&gt;primary&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-success&quot;&gt;success&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-warning&quot;&gt;warning&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-danger&quot;&gt;danger&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-royal&quot;&gt;royal&lt;/Button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    import { Button } from &#39;mvui&#39;;
+    export default{   
+        components: { 
+            Button
+        }
+    }
+&lt;/script&gt;
+</code></pre>
+<h3 id="是否有背景色"><a href="#是否有背景色" class="headerlink" title="是否有背景色"></a>是否有背景色</h3><pre><code class="html">&lt;template&gt;
+    &lt;Button class=&quot;mv-btn-primary&quot; type=&quot;submit&quot;&gt;primary&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-primary&quot; type=&quot;submit&quot; :plain=&quot;true&quot;&gt;primary&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-primary&quot; type=&quot;submit&quot; :plain=&quot;true&quot; shape=&quot;round&quot;&gt;primary&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-primary&quot; type=&quot;submit&quot; :plain=&quot;true&quot; shape=&quot;round&quot; disabled=&quot;disabled&quot;&gt;primary&lt;/Button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    import { Button } from &#39;mvui&#39;;
+    export default{   
+        components: { 
+            Button
+        }
+    }
+&lt;/script&gt;
+</code></pre>
+<h3 id="是否有icon以及修改icon样式"><a href="#是否有icon以及修改icon样式" class="headerlink" title="是否有icon以及修改icon样式"></a>是否有icon以及修改icon样式</h3><pre><code class="html">&lt;template&gt;
+    &lt;Button class=&quot;mv-btn-primary&quot; icon=&quot;ion-load-d&quot;&gt;加载中...&lt;/Button&gt;
+    &lt;Button class=&quot;mv-btn-primary&quot; icon=&quot;ion-ios-star&quot; icon-style=&quot;color: red;font-size: 0.14rem;&quot;&gt;primary&lt;/Button&gt;
+&lt;/template&gt;
+&lt;script&gt;
+    import { Button } from &#39;mvui&#39;;
+    export default{   
+        components: { 
+            Button
+        }
+    }
+&lt;/script&gt;
+</code></pre>
+
+      
+    </div>
+  </div>
+  
+    
+  
+</article>
+
+
+          </div>
+        </section>
+        
+        
+          <aside id="leftnav">
+    
+        <div class="widget-wrap">
+            <div class="widget-title">View</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                        <li><a href="/View/alert/">Alert 弹框</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/collapse/">Collapse 折叠面板</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/modal/">Modal 模态框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/tip/">Tip 提示</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Basic</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                        <li><a href="/Basic/button/">Button 按钮</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Basic/icon/">Icon 图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Chart</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Chart/circle/">Circle 进度环</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Chart/progress/">Progress 进度条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Summary</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/desc/">mVui介绍</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/log/">更新日志</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/standard/">规范</a></li>
+                        
+                    
+                        
+                        <li><a href="/Summary/start/">起步</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Other</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/gotop/">gotop 回到顶部</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/loadding/">loadding 加载图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/pullrefresh/">pullrefresh 下拉刷新</a></li>
+                        
+                    
+                        
+                        <li><a href="/Other/pullload/">pullload 下拉加载</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+</aside>
+
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      社区<br/>
+      <a href="">github</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/Summary/desc/" class="mobile-nav-link">起步</a>
+  
+    <a href="/Basic/icon/" class="mobile-nav-link">组件</a>
+  
+    <a href="/example" class="mobile-nav-link">示例</a>
+  
+    <a href="https://github.com/GreatBoy/mvui" class="mobile-nav-link">github</a>
+  
+</nav>
+    
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/js/vivus.min.js"></script>
+<script src="/js/highlight.min.js"></script>
+<script>
+  // highlight
+ hljs.initHighlightingOnLoad();
+</script>
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%- partial('_partial/head') %>
+<body>
+  <div id="container">
+    <div id="wrap">
+
+      <%- partial('_partial/header_new', null, {cache: !config.relative_link}) %>
+
+      <div class="outer <% if (theme.leftnav) { %> leftnav_bg<% } %>">
+        <section id="main">
+          <div <% if( page.tags && page.tags.data[0] && page.tags.data[0].name ){ %>class="main-margin-right"<% } %>>
+            <%- body %>
+          </div>
+        </section>
+
+        <% if (theme.leftnav && theme.leftnav !== 'bottom'){ %>
+          <%- partial('_partial/leftnav', null, {cache: !config.relative_link}) %>
+        <% } %>
+
+      </div>
+      <% if( page.tags && page.tags.data[0] && page.tags.data[0].name ){ %>
+        <div id="main-right">
+          <div id="main-right-iframe">
+            <iframe src="<%= page.tags.data[0].name %>"></iframe>
+          </div>
+        </div>
+      <% } %>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    </div>
+    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/after-footer') %>
+  </div>
+</body>
+</html>

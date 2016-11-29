@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>起步 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="起步使用之前使用mvui之前，您应该了解vue.js的一些知识，其次需要了解rem布局，mvui基于rem布局
+Vue组件基于Vue构建大型应用以下概念贯穿iView前后，建议开发者花点时间来了解。props 传递数据，以及:prop :prop.sync :prop.once的区别slot 内容分发events $emit @click 事件
+rem布局目前所有组件是基于rem布局，以320为基">
+<meta property="og:type" content="article">
+<meta property="og:title" content="起步">
+<meta property="og:url" content="http://yoursite.com/Summary/start/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="起步使用之前使用mvui之前，您应该了解vue.js的一些知识，其次需要了解rem布局，mvui基于rem布局
+Vue组件基于Vue构建大型应用以下概念贯穿iView前后，建议开发者花点时间来了解。props 传递数据，以及:prop :prop.sync :prop.once的区别slot 内容分发events $emit @click 事件
+rem布局目前所有组件是基于rem布局，以320为基">
+<meta property="og:updated_time" content="2016-10-28T03:06:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="起步">
+<meta name="twitter:description" content="起步使用之前使用mvui之前，您应该了解vue.js的一些知识，其次需要了解rem布局，mvui基于rem布局
+Vue组件基于Vue构建大型应用以下概念贯穿iView前后，建议开发者花点时间来了解。props 传递数据，以及:prop :prop.sync :prop.once的区别slot 内容分发events $emit @click 事件
+rem布局目前所有组件是基于rem布局，以320为基">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  <style>
+    #mobile-nav{
+      display: none;
+    }
+    body {
+      background: #edf2f6;
+      font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #525252;
+        padding: 15px;
+        -webkit-text-size-adjust: none
+    }
+
+    .hljs-tag {
+        color: #007aff;
+    }
+
+    .hljs-attribute {
+        color: #e96900
+    }
+
+    .hljs-value {
+        color: #42b983
+    }
+
+    .hljs-keyword {
+        color: #e96900
+    }
+
+    .hljs-string {
+        color: #42b983
+    }
+
+    .hljs-comment {
+        color: #b3b3b3
+    }
+
+    .hljs-operator .hljs-comment {
+        color: #525252
+    }
+
+    .hljs-regexp {
+        color: #af7dff
+    }
+
+    .hljs-built_in {
+        color: #2db7f5
+    }
+
+    .css .hljs-class {
+        color: #e96900
+    }
+
+    .css .hljs-number,.javascript .hljs-number {
+        color: #fc1e70
+    }
+
+    .css .hljs-attribute {
+        color: #af7dff
+    }
+
+    .css .hljs-important {
+        color: red
+    }
+
+    .javascript .hljs-literal {
+        color: #fc1e70
+    }
+
+    pre {
+        padding: 0;
+        margin: 0
+    }
+
+    code {
+        display: inline-block;
+        background: #f7f7f7;
+        font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+        margin: 0 3px;
+        padding: 1px 6px;
+        border-radius: 3px;
+        color: #777;
+        font-size: 12px;
+        border: 1px solid #e9e9e9
+    }
+
+    pre code {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent
+    }
+
+    pre.bg code {
+        background: #f7f7f7
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+
+      <header id="header_new">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <div id="main-logo">
+        <a href="/"><img class="main-logo-img" src="/images/mvui/Mvui-02.png"/></a>
+        <svg height="0" id="obturateur1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+             <path d="M 5 50 q 15 -50 25 0 q 25 -50 35 0 M 60 0 q 70 50 60 0" stroke="#42b983" stroke-width="3" fill="none" />
+        </svg>
+
+      </div>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/Summary/desc/">起步</a>
+        
+          <a class="main-nav-link" href="/Basic/icon/">组件</a>
+        
+          <a class="main-nav-link" href="/example">示例</a>
+        
+          <a class="main-nav-link" href="https://github.com/GreatBoy/mvui">github</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer  leftnav_bg">
+        <section id="main">
+          <div >
+            <article id="post-start" class="article article-type-post" itemscope itemprop="blogPost">
+  <div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h1><h2 id="使用之前"><a href="#使用之前" class="headerlink" title="使用之前"></a>使用之前</h2><p>使用mvui之前，您应该了解vue.js的一些知识，其次需要了解rem布局，mvui基于rem布局</p>
+<h2 id="Vue组件"><a href="#Vue组件" class="headerlink" title="Vue组件"></a>Vue组件</h2><p>基于Vue构建大型应用<br>以下概念贯穿iView前后，建议开发者花点时间来了解。<br>props 传递数据，以及:prop :prop.sync :prop.once的区别<br>slot 内容分发<br>events $emit @click 事件</p>
+<h2 id="rem布局"><a href="#rem布局" class="headerlink" title="rem布局"></a>rem布局</h2><p>目前所有组件是基于rem布局，以320为基准，计算不同手机的font-size值进行缩放，适配不同的手机。这期间，您需要切不同的图片，可以切2倍图或者三倍图。建议所有页面的图片要切到3倍以上。</p>
+<h2 id="rem布局原理"><a href="#rem布局原理" class="headerlink" title="rem布局原理"></a>rem布局原理</h2><p>默认浏览器1rem=16px,也就相当于根元素html的字体大小为16px,当我们更改html font-size的时候，这时候rem也在跟着变化。<br>因此我们可以想象到当基础布局为320px的时候，1rem=16px的时候，320px=20rem，所以我们可以动态的计算获取到的可视区域宽度为windowWidth，windowWidth 与320 的比例值即为缩放比X。<br>公式为 windowWidth / 320 = X / 16,会有这样的一个公式。<br>当我们每次动态计算出X的值，把html font-size设置为x就可以满足需求。这个时候如果我们以320px布局的话，那么得做一次中间转换，当时我用fis写了一个插件，做中间转换。</p>
+<p>后来去某一个公司面试，那公司老大给我提了个醒，他说为啥不可以直接以320px 直接等于3.2rem这种形式开发呢，就不存在了中间转化，他们只是差距 100倍，因此只需要在原来的公式计算出的x在乘以 100，既可以得出我们想要的结果。代码如下：</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; id=&quot;viewport&quot; content=&quot;width=320,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+    &lt;style&gt;
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    li,
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
+    }
+    body {
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .ui-tab {
+        height: 10px;
+    }
+    &lt;/style&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/weui.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/index.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/example.css&quot;/&gt;
+    &lt;script&gt;
+    (function(win) {
+        var doc = win.document,
+            scale = 16,
+            $body = doc.getElementsByTagName(&#39;body&#39;)[0],
+            $html = doc.getElementsByTagName(&#39;html&#39;)[0],
+            windowWidth = doc.documentElement &amp;&amp; doc.documentElement.clientWidth || doc.body &amp;&amp; doc.body.clientWidth || win.innerWidth,
+            windowHeight = doc.documentElement &amp;&amp; doc.documentElement.clientHeight || doc.body &amp;&amp; doc.body.clientHeight || win.innerHeight,
+            deviceAgent = navigator.userAgent.toLowerCase();
+        $html.style.display = &#39;none&#39;;
+        if (deviceAgent.match(/(iphone|ipod|ipad|android|windows\s*phone|symbianos)/)) {
+            try {
+                // if ( window.localStorage &amp;&amp; window.localStorage.getItem(&#39;scale_greatboy&#39;) ) {
+                //    scale = window.localStorage.getItem(&#39;scale_greatboy&#39;);
+                // } else {
+                scale = parseFloat(windowWidth * 16 / (16 * 3.2));
+                if (windowHeight &gt; windowWidth) {
+                    //window.localStorage &amp;&amp; window.localStorage.setItem(&#39;scale_greatboy&#39;, scale);
+                }
+                // }
+            } catch (e) {
+
+            }
+            if (deviceAgent.match(/android\s*2.3/) &amp;&amp; deviceAgent.match(/micromessenger/)) {
+                scale = 16;
+            }
+        } else {
+            scale = parseFloat(windowWidth * 16 / (16 * 3.2));
+            if (scale &gt; 150) {
+                scale = 150;
+            }
+        }
+
+        $html.style.fontSize = scale + &#39;px&#39;;
+        window.onresize = function() {
+            windowWidth = doc.documentElement &amp;&amp; doc.documentElement.clientWidth || doc.body.clientWidth || win.innerWidth;
+            scale = parseFloat(windowWidth * 16 / (16 * 3.2));
+            if (scale &gt; 150) {
+                scale = 150;
+            }
+            $html.style.fontSize = scale + &#39;px&#39;;
+        };
+
+        window.onload = function() {
+            $body = document.getElementsByTagName(&#39;body&#39;)[0],
+            $body.style.width = &#39;3.2rem&#39;;
+            $body.style.fontSize = &#39;0.14rem&#39;;
+            $html.style.display = &#39;block&#39;;
+        }
+    })(window);
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;dist/common.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;dist/build.bundle.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="rem布局步骤"><a href="#rem布局步骤" class="headerlink" title="rem布局步骤"></a>rem布局步骤</h2><h6 id="1-把html-js放到页面中"><a href="#1-把html-js放到页面中" class="headerlink" title="1) 把html js放到页面中"></a>1) 把html js放到页面中</h6><h6 id="2）把拿来的设计图改成320px宽度的像素，然后基于这个宽度进行测量大小。"><a href="#2）把拿来的设计图改成320px宽度的像素，然后基于这个宽度进行测量大小。" class="headerlink" title="2）把拿来的设计图改成320px宽度的像素，然后基于这个宽度进行测量大小。"></a>2）把拿来的设计图改成320px宽度的像素，然后基于这个宽度进行测量大小。</h6><h6 id="3）切图为320px基准的2倍数或者3倍图。"><a href="#3）切图为320px基准的2倍数或者3倍图。" class="headerlink" title="3）切图为320px基准的2倍数或者3倍图。"></a>3）切图为320px基准的2倍数或者3倍图。</h6><h6 id="4）-写代码了，也即是当我们测量为-100px的时候，我么只需要写1rem就可以。不做中间转换处理的好处是调试的时候可以直接在页面里调试。直接写rem就OK了"><a href="#4）-写代码了，也即是当我们测量为-100px的时候，我么只需要写1rem就可以。不做中间转换处理的好处是调试的时候可以直接在页面里调试。直接写rem就OK了" class="headerlink" title="4） 写代码了，也即是当我们测量为 100px的时候，我么只需要写1rem就可以。不做中间转换处理的好处是调试的时候可以直接在页面里调试。直接写rem就OK了"></a>4） 写代码了，也即是当我们测量为 100px的时候，我么只需要写1rem就可以。不做中间转换处理的好处是调试的时候可以直接在页面里调试。直接写rem就OK了</h6>
+      
+    </div>
+  </div>
+  
+    
+  
+</article>
+
+
+          </div>
+        </section>
+        
+        
+          <aside id="leftnav">
+    
+        <div class="widget-wrap">
+            <div class="widget-title">View</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                        <li><a href="/View/alert/">Alert 弹框</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/collapse/">Collapse 折叠面板</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/modal/">Modal 模态框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/View/tip/">Tip 提示</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Basic</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                        <li><a href="/Basic/button/">Button 按钮</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Basic/icon/">Icon 图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Chart</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Chart/circle/">Circle 进度环</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Chart/progress/">Progress 进度条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Summary</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/desc/">mVui介绍</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/log/">更新日志</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Summary/standard/">规范</a></li>
+                        
+                    
+                        
+                        <li><a href="/Summary/start/">起步</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Other</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/gotop/">gotop 回到顶部</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/loadding/">loadding 加载图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/Other/pullrefresh/">pullrefresh 下拉刷新</a></li>
+                        
+                    
+                        
+                        <li><a href="/Other/pullload/">pullload 下拉加载</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+</aside>
+
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      社区<br/>
+      <a href="">github</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/Summary/desc/" class="mobile-nav-link">起步</a>
+  
+    <a href="/Basic/icon/" class="mobile-nav-link">组件</a>
+  
+    <a href="/example" class="mobile-nav-link">示例</a>
+  
+    <a href="https://github.com/GreatBoy/mvui" class="mobile-nav-link">github</a>
+  
+</nav>
+    
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/js/vivus.min.js"></script>
+<script src="/js/highlight.min.js"></script>
+<script>
+  // highlight
+ hljs.initHighlightingOnLoad();
+</script>
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

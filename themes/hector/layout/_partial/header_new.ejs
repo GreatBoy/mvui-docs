@@ -1,0 +1,19 @@
+<header id="header_new">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <div id="main-logo">
+        <a href="/"><img class="main-logo-img" src="/images/mvui/Mvui-02.png"/></a>
+        <svg height="0" id="obturateur1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+             <path d="M 5 50 q 15 -50 25 0 q 25 -50 35 0 M 60 0 q 70 50 60 0" stroke="#42b983" stroke-width="3" fill="none" />
+        </svg>
+
+      </div>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        <% for (var i in theme.menu){ %>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        <% } %>
+      </nav>
+    </div>
+  </div>
+</header>
