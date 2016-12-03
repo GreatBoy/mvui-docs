@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Accordion 折叠面板 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Accordion 折叠面板通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述Accordion 折叠面板，需要有 Panel共同完成Accordion 支持 class 、style 、accordion等三个属性Panel 支持 cla">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Accordion 折叠面板">
+<meta property="og:url" content="http://greatboy.github.io/mvui-page/View/accordion/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Accordion 折叠面板通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述Accordion 折叠面板，需要有 Panel共同完成Accordion 支持 class 、style 、accordion等三个属性Panel 支持 cla">
+<meta property="og:updated_time" content="2016-11-23T00:53:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Accordion 折叠面板">
+<meta name="twitter:description" content="Accordion 折叠面板通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述Accordion 折叠面板，需要有 Panel共同完成Accordion 支持 class 、style 、accordion等三个属性Panel 支持 cla">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+      <link rel="shortcut icon" href="/mvui-page/images/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/mvui-page/css/style.css">
+  
+
+  <style>
+    #main-right iframe{
+      height: 512px;
+    }
+    #mobile-nav{
+      display: none;
+    }
+    body {
+      background: #edf2f6;
+      font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #525252;
+        padding: 15px;
+        -webkit-text-size-adjust: none
+    }
+
+    .hljs-tag {
+        color: #007aff;
+    }
+
+    .hljs-attribute {
+        color: #e96900
+    }
+
+    .hljs-value {
+        color: #42b983
+    }
+
+    .hljs-keyword {
+        color: #e96900
+    }
+
+    .hljs-string {
+        color: #42b983
+    }
+
+    .hljs-comment {
+        color: #b3b3b3
+    }
+
+    .hljs-operator .hljs-comment {
+        color: #525252
+    }
+
+    .hljs-regexp {
+        color: #af7dff
+    }
+
+    .hljs-built_in {
+        color: #2db7f5
+    }
+
+    .css .hljs-class {
+        color: #e96900
+    }
+
+    .css .hljs-number,.javascript .hljs-number {
+        color: #fc1e70
+    }
+
+    .css .hljs-attribute {
+        color: #af7dff
+    }
+
+    .css .hljs-important {
+        color: red
+    }
+
+    .javascript .hljs-literal {
+        color: #fc1e70
+    }
+
+    pre {
+        padding: 0;
+        margin: 0
+    }
+
+    code {
+        display: inline-block;
+        background: #f7f7f7;
+        font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+        margin: 0 3px;
+        padding: 1px 6px;
+        border-radius: 3px;
+        color: #777;
+        font-size: 12px;
+        border: 1px solid #e9e9e9
+    }
+
+    pre code {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent
+    }
+
+    pre.bg code {
+        background: #f7f7f7
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+
+      <header id="header_new">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <div id="main-logo">
+        <a href="/"><img class="main-logo-img" src="/mvui-page/images/mvui/Mvui-02.png"/></a>
+        <svg height="0" id="obturateur1" xmlns="http://www.w3.org/2000/svg" version="1.1">
+             <path d="M 5 50 q 15 -50 25 0 q 25 -50 35 0 M 60 0 q 70 50 60 0" stroke="#42b983" stroke-width="3" fill="none" />
+        </svg>
+
+      </div>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/mvui-page/mvui-page/Summary/desc/">起步</a>
+        
+          <a class="main-nav-link" href="/mvui-page/mvui-page/Basic/icon/">组件</a>
+        
+          <a class="main-nav-link" href="/mvui-page/mvui-page/example">示例</a>
+        
+          <a class="main-nav-link" href="https://github.com/GreatBoy/mvui">github</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <div class="outer  leftnav_bg">
+        <section id="main">
+          <div class="main-margin-right">
+            <article id="post-accordion" class="article article-type-post" itemscope itemprop="blogPost">
+  <div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Accordion-折叠面板"><a href="#Accordion-折叠面板" class="headerlink" title="Accordion 折叠面板"></a>Accordion 折叠面板</h1><h2 id="通用参数"><a href="#通用参数" class="headerlink" title="通用参数"></a>通用参数</h2><h6 id="所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象"><a href="#所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象" class="headerlink" title="所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象"></a>所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象</h6><h6 id="注：如果是变量需要在class前面加冒号-例如-class-”mv-button”"><a href="#注：如果是变量需要在class前面加冒号-例如-class-”mv-button”" class="headerlink" title="注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”"></a>注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”</h6><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Accordion 折叠面板，需要有 Panel共同完成<br>Accordion 支持 class 、style 、accordion等三个属性<br>Panel 支持 class 、 style 、 open 、 key等属性</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><pre><code class="html">&lt;template&gt;
+    &lt;div&gt;
+        &lt;Accordion&gt;
+            &lt;Panel&gt;
+                &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+              她坦白了我们所虚伪的 她单纯了我们所复杂的
+              五年以来…
+              5年的等待，是个漫长也是耗损的过程。
+              看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+              她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+              这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+              是我们唯一相信且期待杨乃文的理由。
+            &lt;/Panel&gt;
+            &lt;Panel&gt;
+                &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+                  她坦白了我们所虚伪的 她单纯了我们所复杂的
+                  五年以来…
+                  5年的等待，是个漫长也是耗损的过程。
+                  看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+                  她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+                  这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+                  是我们唯一相信且期待杨乃文的理由。
+            &lt;/Panel&gt;
+        &lt;/Accordion&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import { Accordion,Panel } from &#39;mvui&#39;;
+export default {
+    components: {
+        Accordion,
+        Panel
+    },
+    data(){
+        return {
+            message: &#39;&#39;
+        }
+    }
+} 
+&lt;/script&gt;
+</code></pre>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Accordion Props</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">默认值</th>
+<th style="text-align:left">可选值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">选填，类名（可以设置icon）</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">选填，内联样式,自由设置样式</td>
+<td style="text-align:left">[String,Object]</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">accordion</td>
+<td style="text-align:left">选填，是否显示手风琴效果</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">任意</td>
+</tr>
+</tbody>
+</table>
+<p>Accordion Slot</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name 名称</th>
+<th style="text-align:left">说明                     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Panel</td>
+<td style="text-align:left">需要panel</td>
+</tr>
+</tbody>
+</table>
+<p>Panel Props</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">属性</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">默认值</th>
+<th style="text-align:left">可选值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">class</td>
+<td style="text-align:left">选填，类名（可以设置icon）</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">style</td>
+<td style="text-align:left">选填，内联样式,自由设置样式</td>
+<td style="text-align:left">[String,Object]</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+<tr>
+<td style="text-align:left">open</td>
+<td style="text-align:left">必填，是否展开</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">true</td>
+<td>false</td>
+</tr>
+<tr>
+<td style="text-align:left">key</td>
+<td style="text-align:left">必填，key标示的值</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">任意</td>
+</tr>
+</tbody>
+</table>
+<p>Panel Slot</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">name 名称</th>
+<th style="text-align:left">说明                     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">title</td>
+</tr>
+<tr>
+<td style="text-align:left">默认</td>
+<td style="text-align:left">内容</td>
+</tr>
+</tbody>
+</table>
+<h2 id="右侧示例代码"><a href="#右侧示例代码" class="headerlink" title="右侧示例代码"></a>右侧示例代码</h2><pre><code class="html">&lt;template&gt;
+    &lt;div class=&quot;body-wrapper&quot;&gt;
+        &lt;Hometitle&gt;Accordion&lt;/Hometitle&gt;
+        &lt;div class=&quot;wrapper-example wrapper-example-accordion&quot;&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;默认&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Accordion&gt;
+                        &lt;Panel&gt;
+                            &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+                          她坦白了我们所虚伪的 她单纯了我们所复杂的
+                          五年以来…
+                          5年的等待，是个漫长也是耗损的过程。
+                          看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+                          她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+                          这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+                          是我们唯一相信且期待杨乃文的理由。
+                        &lt;/Panel&gt;
+                        &lt;Panel&gt;
+                            &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+                              她坦白了我们所虚伪的 她单纯了我们所复杂的
+                              五年以来…
+                              5年的等待，是个漫长也是耗损的过程。
+                              看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+                              她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+                              这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+                              是我们唯一相信且期待杨乃文的理由。
+                        &lt;/Panel&gt;
+                    &lt;/Accordion&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+             &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;accordion&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Accordion accordion&gt;
+                        &lt;Panel&gt;
+                            &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+                          她坦白了我们所虚伪的 她单纯了我们所复杂的
+                          五年以来…
+                          5年的等待，是个漫长也是耗损的过程。
+                          看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+                          她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+                          这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+                          是我们唯一相信且期待杨乃文的理由。
+                        &lt;/Panel&gt;
+                        &lt;Panel&gt;
+                            &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+                              她坦白了我们所虚伪的 她单纯了我们所复杂的
+                              五年以来…
+                              5年的等待，是个漫长也是耗损的过程。
+                              看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+                              她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+                              这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+                              是我们唯一相信且期待杨乃文的理由。
+                        &lt;/Panel&gt;
+                    &lt;/Accordion&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wrapper-area&quot;&gt;
+                &lt;div class=&quot;wrapper-area-title&quot;&gt;默认打开&lt;/div&gt;
+                &lt;div class=&quot;wrapper-area-content&quot;&gt;
+                    &lt;Accordion accordion&gt;
+                        &lt;Panel :open=&quot;true&quot;&gt;
+                            &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+                          她坦白了我们所虚伪的 她单纯了我们所复杂的
+                          五年以来…
+                          5年的等待，是个漫长也是耗损的过程。
+                          看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+                          她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+                          这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+                          是我们唯一相信且期待杨乃文的理由。
+                        &lt;/Panel&gt;
+                        &lt;Panel&gt;
+                            &lt;div slot=&quot;title&quot;&gt;测试啦啦啦&lt;/div&gt;
+                              她坦白了我们所虚伪的 她单纯了我们所复杂的
+                              五年以来…
+                              5年的等待，是个漫长也是耗损的过程。
+                              看尽乐坛芭比娃娃的甜美面具，「性格」这两个字，似乎快要消失！
+                              她的声音，她的个性，象徵著无可取代的高傲、独特的姿态，
+                              这样一股充满灵魂的音乐、沉寂而刚苏醒的真声音，
+                              是我们唯一相信且期待杨乃文的理由。
+                        &lt;/Panel&gt;
+                    &lt;/Accordion&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Hometitle from &#39;./common/hometitle.vue&#39;;
+import {
+    Panel,
+    Accordion,
+    Button
+} from &#39;mvui&#39;;
+export default {
+    components: {
+        Hometitle,
+        Panel,
+        Accordion,
+        Button
+    },
+    data() {
+        return {
+            selected: true,
+        }
+    }
+}
+&lt;/script&gt;
+&lt;style lang=&quot;less&quot;&gt;
+    .wrapper-example-accordion .wrapper-area-content,.wrapper-example-accordion .wrapper-area{
+        background: transparent;
+    }
+&lt;/style&gt;
+</code></pre>
+
+      
+    </div>
+  </div>
+  
+    
+  
+</article>
+
+
+          </div>
+        </section>
+
+        
+          <aside id="leftnav">
+    
+    
+    
+    
+
+    
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Summary</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/desc/">Mvui介绍</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/log/">更新日志</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/standard/">规范</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/start/">起步</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Basic</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Basic/button/">Button 按钮</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Basic/icon/">Icon 图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Form</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/checkbox/">Checkbox 多选框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/inputbox/">Inputbox 输入框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/radio/">Radio 单选框</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/selector/">Selector 选择框</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/switch/">Switch 开关</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Chart</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Chart/circle/">Circle 进度环</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Chart/progress/">Progress 进度条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">View</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                        <li><a href="/mvui-page/View/alert/">Alert 弹框</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/View/accordion/">Accordion 折叠面板</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/View/modal/">Modal 模态框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/View/tip/">Tip 提示</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Other</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/gotop/">gotop 回到顶部</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/loadding/">loadding 加载图标</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/page/">Page 分页</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/pullrefresh/">Pullrefresh 下拉刷新</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/pullload/">Pullload 下拉加载</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/slider/">Slider 轮播</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/scroll/">Scroll 滚动条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/uploader/">Uploader 上传</a></li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+</aside>
+
+        
+
+      </div>
+      
+        <div id="main-right">
+          <div id="main-right-iframe">
+            <iframe src="http://localhost:8080/#!/accordion?hidetitle=true"></iframe>
+          </div>
+        </div>
+      
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      社区<br/>
+      <a href="">github</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/mvui-page/mvui-page/Summary/desc/" class="mobile-nav-link">起步</a>
+  
+    <a href="/mvui-page/mvui-page/Basic/icon/" class="mobile-nav-link">组件</a>
+  
+    <a href="/mvui-page/mvui-page/example" class="mobile-nav-link">示例</a>
+  
+    <a href="https://github.com/GreatBoy/mvui" class="mobile-nav-link">github</a>
+  
+</nav>
+    
+
+<script src="/mvui-page/js/jquery-2.0.3.min.js"></script>
+
+  <link rel="stylesheet" href="/mvui-page/fancybox/jquery.fancybox.css">
+  <script src="/mvui-page/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/mvui-page/js/vivus.min.js"></script>
+<script src="/mvui-page/js/highlight.min.js"></script>
+<script>
+  // highlight
+ hljs.initHighlightingOnLoad();
+</script>
+<script src="/mvui-page/js/script.js"></script>
+
+  </div>
+</body>
+</html>

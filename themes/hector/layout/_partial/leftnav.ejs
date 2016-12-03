@@ -12,7 +12,7 @@
                 <ul>
                     <% site.posts.each(function(post){ %>
                         <%if (category.name == post.categories.data[0].name) { %>
-                        <li><a href="/<%=post.path%>"><%=post.title%></a></li>
+                        <li><a href="/mvui-page/<%=post.path%>"><%=post.title%></a></li>
                         <% } %>
                     <% }) %>
                 </ul>

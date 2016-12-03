@@ -25,19 +25,19 @@ Slider 可以自定义通用属性class和style
 <template>  
     <Slider>
         <li>
-            <img src="/static/click1.jpg"/>
+            <img src="static/click1.jpg"/>
             <span>文案</span>
         </li>
         <li>
-            <img src="/static/click1.jpg"/>
+            <img src="static/click1.jpg"/>
             <span>文案</span>
         </li>
         <li>
-            <img src="/static/click1.jpg"/>
+            <img src="static/click1.jpg"/>
             <span>文案</span>
         </li>
         <li>
-            <img src="/static/click1.jpg"/>
+            <img src="static/click1.jpg"/>
             <span>文案</span>
         </li>
     </Slider>
@@ -88,19 +88,19 @@ Slider props
             <div class="wrapper-area-content" id="parent">
                 <Slider>
                     <li>
-                        <img src="/static/click1.jpg"/>
+                        <img src="static/click1.jpg"/>
                         <span>文案</span>
                     </li>
                     <li>
-                        <img src="/static/click1.jpg"/>
+                        <img src="static/click1.jpg"/>
                         <span>文案</span>
                     </li>
                     <li>
-                        <img src="/static/click1.jpg"/>
+                        <img src="static/click1.jpg"/>
                         <span>文案</span>
                     </li>
                     <li>
-                        <img src="/static/click1.jpg"/>
+                        <img src="static/click1.jpg"/>
                         <span>文案</span>
                     </li>
                 </Slider>

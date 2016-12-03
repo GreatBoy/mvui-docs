@@ -1,8 +1,8 @@
 # Header
 menu:
-  起步: /Summary/desc/
-  组件: /Basic/icon/
-  示例: /example
+  起步: /mvui-page/Summary/desc/
+  组件: /mvui-page/Basic/icon/
+  示例: /mvui-page/example
   github: https://github.com/GreatBoy/mvui
 rss: /atom.xml
 

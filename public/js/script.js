@@ -146,5 +146,11 @@
           $(this).addClass('selected');
       }
   });
-  
+
+
+  $(window).on('scroll', function(){
+      if($(window).scrollTop() >= 68){
+        
+      }
+  });
 })(jQuery);

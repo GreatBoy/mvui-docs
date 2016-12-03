@@ -3,29 +3,35 @@
 <head>
   <meta charset="utf-8">
   
-  <title>pullrefresh 下拉刷新 | Hexo</title>
+  <title>Pullrefresh 下拉刷新 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgC">
+  <meta name="description" content="Pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述Pullrefresh 下拉刷新，支持三种情况，一种是默认window的滚动条、某元素的滚动条、以及scroll滚动条。
+1）window默认滚动条 使用方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pullrefresh 下拉刷新">
-<meta property="og:url" content="http://yoursite.com/Other/pullrefresh/index.html">
+<meta property="og:title" content="Pullrefresh 下拉刷新">
+<meta property="og:url" content="http://greatboy.github.io/mvui-page/Other/pullrefresh/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgC">
-<meta property="og:updated_time" content="2016-10-28T03:38:31.000Z">
+<meta property="og:description" content="Pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述Pullrefresh 下拉刷新，支持三种情况，一种是默认window的滚动条、某元素的滚动条、以及scroll滚动条。
+1）window默认滚动条 使用方法">
+<meta property="og:updated_time" content="2016-11-23T06:24:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pullrefresh 下拉刷新">
-<meta name="twitter:description" content="pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgC">
+<meta name="twitter:title" content="Pullrefresh 下拉刷新">
+<meta name="twitter:description" content="Pullrefresh 下拉刷新通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述Pullrefresh 下拉刷新，支持三种情况，一种是默认window的滚动条、某元素的滚动条、以及scroll滚动条。
+1）window默认滚动条 使用方法">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="/mvui-page/images/favicon.ico" type="image/x-icon">
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/mvui-page/css/style.css">
   
 
   <style>
+    #main-right iframe{
+      height: 512px;
+    }
     #mobile-nav{
       display: none;
     }
@@ -139,7 +145,7 @@
   <div id="header-outer" class="outer">
     <div id="header-inner" class="inner">
       <div id="main-logo">
-        <a href="/"><img class="main-logo-img" src="/images/mvui/Mvui-02.png"/></a>
+        <a href="/"><img class="main-logo-img" src="/mvui-page/images/mvui/Mvui-02.png"/></a>
         <svg height="0" id="obturateur1" xmlns="http://www.w3.org/2000/svg" version="1.1">
              <path d="M 5 50 q 15 -50 25 0 q 25 -50 35 0 M 60 0 q 70 50 60 0" stroke="#42b983" stroke-width="3" fill="none" />
         </svg>
@@ -148,11 +154,11 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/Summary/desc/">起步</a>
+          <a class="main-nav-link" href="/mvui-page/mvui-page/Summary/desc/">起步</a>
         
-          <a class="main-nav-link" href="/Basic/icon/">组件</a>
+          <a class="main-nav-link" href="/mvui-page/mvui-page/Basic/icon/">组件</a>
         
-          <a class="main-nav-link" href="/example">示例</a>
+          <a class="main-nav-link" href="/mvui-page/mvui-page/example">示例</a>
         
           <a class="main-nav-link" href="https://github.com/GreatBoy/mvui">github</a>
         
@@ -170,22 +176,108 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="pullrefresh-下拉刷新"><a href="#pullrefresh-下拉刷新" class="headerlink" title="pullrefresh 下拉刷新"></a>pullrefresh 下拉刷新</h1><h2 id="通用参数"><a href="#通用参数" class="headerlink" title="通用参数"></a>通用参数</h2><h6 id="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"><a href="#所有组件均支持class和style属性，class可以是vue变量也可以是字符串" class="headerlink" title="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"></a>所有组件均支持class和style属性，class可以是vue变量也可以是字符串</h6><h6 id="注意：变量需要在class前面加冒号（：），-示例子"><a href="#注意：变量需要在class前面加冒号（：），-示例子" class="headerlink" title="注意：变量需要在class前面加冒号（：）， 示例子"></a>注意：变量需要在class前面加冒号（：）， 示例子</h6><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgColor（背景环颜色）</p>
-<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><pre><code class="html">&lt;template&gt;
-   &lt;Circle :percent.sync=&quot;10&quot; :stroke-width=&quot;15&quot; stroke-color=&quot;#ff4081&quot;&gt;&lt;/Circle&gt; 
+        <h1 id="Pullrefresh-下拉刷新"><a href="#Pullrefresh-下拉刷新" class="headerlink" title="Pullrefresh 下拉刷新"></a>Pullrefresh 下拉刷新</h1><h2 id="通用参数"><a href="#通用参数" class="headerlink" title="通用参数"></a>通用参数</h2><h6 id="所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象"><a href="#所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象" class="headerlink" title="所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象"></a>所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象</h6><h6 id="注：如果是变量需要在class前面加冒号-例如-class-”mv-button”"><a href="#注：如果是变量需要在class前面加冒号-例如-class-”mv-button”" class="headerlink" title="注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”"></a>注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”</h6><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Pullrefresh 下拉刷新，支持三种情况，一种是默认window的滚动条、某元素的滚动条、以及scroll滚动条。</p>
+<h1 id="1）window默认滚动条-使用方法"><a href="#1）window默认滚动条-使用方法" class="headerlink" title="1）window默认滚动条 使用方法"></a>1）window默认滚动条 使用方法</h1><p>需要将组件放到最外层里面的div就好,status既刷新状态，完成后，需要值为0，例如：</p>
+<pre><code class="html">&lt;template&gt;
+   &lt;div&gt;
+       &lt;Pullrefresh :status.sync=&quot;status&quot; @on-refresh=&quot;refreshFunc&quot;&gt;&lt;/Pullrefresh&gt;
+    &lt;div&gt;内容文章&lt;/div&gt;
+   &lt;/div&gt;
 &lt;/template&gt;
 &lt;script&gt;
 import {
-    Circle
+    Pullrefresh
 } from &#39;mvui&#39;;
 export default {
     components: {
-        Circle,
+        Pullrefresh
+    },
+    data() {
+        return {
+            status: &#39;ready&#39;
+        }
+    },
+    methods: {
+        refreshFunc (e) {
+            let self = this;
+            setTimeout(function(){
+                self.status = &#39;ready&#39;;
+            }, 1000);
+        }
     }
-} 
+}
 &lt;/script&gt;
 </code></pre>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Icon props</p>
+<h1 id="2）某元素的默认滚动条-使用方法"><a href="#2）某元素的默认滚动条-使用方法" class="headerlink" title="2）某元素的默认滚动条 使用方法"></a>2）某元素的默认滚动条 使用方法</h1><p>需要将组件放到设置为滚动条元素的内部,.scroll-elem设置为overflow为auto或者scroll, status既刷新状态，完成后，需要值为0，例如：</p>
+<pre><code class="html">&lt;template&gt;
+   &lt;div class=&quot;scroll-elem&quot;&gt;
+       &lt;Pullrefresh :status.sync=&quot;status&quot; @on-refresh=&quot;refreshFunc&quot;&gt;&lt;/Pullrefresh&gt;
+        &lt;div&gt;内容文章&lt;/div&gt;
+   &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import {
+    Pullrefresh
+} from &#39;mvui&#39;;
+export default {
+    components: {
+        Pullrefresh
+    },
+    data() {
+        return {
+            status: &#39;ready&#39;
+        }
+    },
+    methods: {
+        refreshFunc (e) {
+            let self = this;
+            setTimeout(function(){
+                self.status = &#39;ready&#39;;
+            }, 1000);
+        }
+    }
+}
+&lt;/script&gt;
+</code></pre>
+<h1 id="3）scroll滚动条-使用方法"><a href="#3）scroll滚动条-使用方法" class="headerlink" title="3）scroll滚动条 使用方法"></a>3）scroll滚动条 使用方法</h1><p>需要设置scroll滚动条的三个属性，:pull-refresh=”true” @on-refresh=”pullRefresh” :refresh-status.sync=”status”，<br>同时可以通过slot更改状态</p>
+<pre><code class="html">&lt;template&gt;
+   &lt;div class=&quot;wrapper-area-content&quot; id=&quot;parent&quot;&gt;
+        &lt;Scroll :size.sync=&quot;size&quot; :is-refresh.sync=&quot;isRefresh&quot;&gt;
+            &lt;div slot=&quot;down&quot;&gt;我是down按钮&lt;/div&gt;
+            &lt;div slot=&quot;up&quot;&gt;我是up按钮&lt;/div&gt;
+            &lt;div slot=&quot;load&quot;&gt;我是loadding&lt;/div&gt;
+            &lt;ul&gt;
+                &lt;li&gt;文章内容&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/Scroll&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import {
+    Pullrefresh
+} from &#39;mvui&#39;;
+export default {
+    components: {
+        Scroll,
+        Pullrefresh,
+    },
+    data() {
+        return {
+            status: &#39;ready&#39;
+        }
+    },
+    methods: {
+        pullRefresh (e) {
+            let self = this;
+            setTimeout(function(){
+                self.status = &#39;ready&#39;;
+            }, 1000);
+        }
+    }
+}
+&lt;/script&gt;
+</code></pre>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Pullrefresh Props</p>
 <table>
 <thead>
 <tr>
@@ -212,141 +304,413 @@ export default {
 <td style="text-align:left">任意</td>
 </tr>
 <tr>
-<td style="text-align:left">percent</td>
-<td style="text-align:left">必填，百分比</td>
-<td style="text-align:left">Num</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0-100</td>
+<td style="text-align:left">disabled</td>
+<td style="text-align:left">选填，是否禁用</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">true , false</td>
 </tr>
 <tr>
-<td style="text-align:left">size</td>
-<td style="text-align:left">选填，尺寸（单位rem）</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">0.5</td>
-<td style="text-align:left">任意</td>
+<td style="text-align:left">prevent-default</td>
+<td style="text-align:left">选填，是否阻止默认行为</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">true , false</td>
 </tr>
 <tr>
-<td style="text-align:left">stroke-width</td>
-<td style="text-align:left">选填，进度环宽度</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">10</td>
-<td style="text-align:left">任意</td>
-</tr>
-<tr>
-<td style="text-align:left">stroke-color</td>
-<td style="text-align:left">选填，进度环颜色</td>
+<td style="text-align:left">scroll</td>
+<td style="text-align:left">选填，滚动条类型</td>
 <td style="text-align:left">String</td>
-<td style="text-align:left">#007aff</td>
-<td style="text-align:left">任意颜色</td>
+<td style="text-align:left">window</td>
+<td style="text-align:left">window,scroll,other</td>
 </tr>
 <tr>
-<td style="text-align:left">stroke-linecap</td>
-<td style="text-align:left">选填，环顶端形状</td>
+<td style="text-align:left">direction</td>
+<td style="text-align:left">选填，滚动防线</td>
 <td style="text-align:left">String</td>
-<td style="text-align:left">round</td>
-<td style="text-align:left">round(圆)，square（方）</td>
+<td style="text-align:left">y</td>
+<td style="text-align:left">x , y</td>
 </tr>
 <tr>
-<td style="text-align:left">stroke-width</td>
-<td style="text-align:left">选填，背景环宽度</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">10</td>
-<td style="text-align:left">任意数值</td>
-</tr>
-<tr>
-<td style="text-align:left">stroke-color</td>
-<td style="text-align:left">选填，背景环颜色</td>
+<td style="text-align:left">status</td>
+<td style="text-align:left">选填，状态</td>
 <td style="text-align:left">String</td>
-<td style="text-align:left">#ecf1f4</td>
-<td style="text-align:left">任意颜色</td>
+<td style="text-align:left">ready</td>
+<td style="text-align:left">ready 准备,move下拉中,loading下拉完成</td>
 </tr>
 </tbody>
 </table>
-<h2 id="右侧示例代码"><a href="#右侧示例代码" class="headerlink" title="右侧示例代码"></a>右侧示例代码</h2><h3 id="默认形状"><a href="#默认形状" class="headerlink" title="默认形状"></a>默认形状</h3><pre><code class="html">&lt;template&gt;
+<h2 id="右侧示例代码"><a href="#右侧示例代码" class="headerlink" title="右侧示例代码"></a>右侧示例代码</h2><h3 id="window-默认滚动条"><a href="#window-默认滚动条" class="headerlink" title="window 默认滚动条"></a>window 默认滚动条</h3><pre><code class="html">&lt;template&gt;
     &lt;div class=&quot;body-wrapper&quot;&gt;
-        &lt;Hometitle&gt;Circle&lt;/Hometitle&gt;
-        &lt;div class=&quot;wrapper-example&quot;&gt;
-            &lt;div class=&quot;wrapper-area&quot;&gt;
-                &lt;div class=&quot;wrapper-area-title&quot;&gt;默认cricle&lt;/div&gt;
-                &lt;div class=&quot;wrapper-area-content&quot;&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot;&gt;&lt;/Circle&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;wrapper-area&quot;&gt;
-                &lt;div class=&quot;wrapper-area-title&quot;&gt;进度环顶端的形状&lt;/div&gt;
-                &lt;div class=&quot;wrapper-area-content&quot;&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot; stroke-linecap=&quot;square&quot;&gt;&lt;/Circle&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot; stroke-linecap=&quot;round&quot;&gt;&lt;/Circle&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;wrapper-area&quot;&gt;
-                &lt;div class=&quot;wrapper-area-title&quot;&gt;背景环宽度、颜色&lt;/div&gt;
-                &lt;div class=&quot;wrapper-area-content&quot;&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot; :bg-width=&quot;5&quot; bg-color=&quot;#7a67ee&quot;&gt;&lt;/Circle&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot; :bg-width=&quot;15&quot; bg-color=&quot;#fd6131&quot;&gt;&lt;/Circle&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;wrapper-area&quot;&gt;
-                &lt;div class=&quot;wrapper-area-title&quot;&gt;进度环宽度、颜色&lt;/div&gt;
-                &lt;div class=&quot;wrapper-area-content&quot;&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot; :stroke-width=&quot;5&quot; stroke-color=&quot;#10c0d8&quot;&gt;&lt;/Circle&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot; :stroke-width=&quot;15&quot; stroke-color=&quot;#ff4081&quot;&gt;&lt;/Circle&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;wrapper-area&quot;&gt;
-                &lt;div class=&quot;wrapper-area-title&quot;&gt;进度环文本&lt;/div&gt;
-                &lt;div class=&quot;wrapper-area-content&quot;&gt;
-                    &lt;Circle :percent.sync=&quot;percent&quot;&gt;
-                        润度
-                    &lt;/Circle&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;wrapper-area&quot;&gt;
-                &lt;div class=&quot;wrapper-area-title&quot;&gt;控制进度环&lt;/div&gt;
-                &lt;div class=&quot;wrapper-area-content&quot;&gt;
-                    &lt;div&gt;
-                        &lt;Button @click=&quot;add&quot; class=&quot;progress-btn-example&quot; shape=&quot;round&quot;&gt;增加&lt;/Button&gt;
-                        &lt;Button @click=&quot;minus&quot; class=&quot;progress-btn-example&quot; shape=&quot;round&quot;&gt;减少&lt;/Button&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+        &lt;Pullrefresh :status.sync=&quot;status&quot; @on-refresh=&quot;refreshFunc&quot;&gt;&lt;/Pullrefresh&gt;
+        &lt;Hometitle&gt;PullRefreshWindow&lt;/Hometitle&gt;
+        &lt;div class=&quot;wrapper-example wrapper-example-refresh-window&quot;&gt;
+            &lt;div class=&quot;wrapper-area-content&quot; id=&quot;parent&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Pretty row 1&lt;/li&gt;
+                    &lt;li&gt;Pretty row 2&lt;/li&gt;
+                    &lt;li&gt;Pretty row 3&lt;/li&gt;
+                    &lt;li&gt;Pretty row 4&lt;/li&gt;
+                    &lt;li&gt;Pretty row 5&lt;/li&gt;
+                    &lt;li&gt;Pretty row 6&lt;/li&gt;
+                    &lt;li&gt;Pretty row 7&lt;/li&gt;
+                    &lt;li&gt;Pretty row 8&lt;/li&gt;
+                    &lt;li&gt;Pretty row 9&lt;/li&gt;
+                    &lt;li&gt;Pretty row 10&lt;/li&gt;
+                    &lt;li&gt;Pretty row 11&lt;/li&gt;
+                    &lt;li&gt;Pretty row 12&lt;/li&gt;
+                    &lt;li&gt;Pretty row 13&lt;/li&gt;
+                    &lt;li&gt;Pretty row 14&lt;/li&gt;
+                    &lt;li&gt;Pretty row 15&lt;/li&gt;
+                    &lt;li&gt;Pretty row 16&lt;/li&gt;
+                    &lt;li&gt;Pretty row 17&lt;/li&gt;
+                    &lt;li&gt;Pretty row 18&lt;/li&gt;
+                    &lt;li&gt;Pretty row 19&lt;/li&gt;
+                    &lt;li&gt;Pretty row 20&lt;/li&gt;
+                    &lt;li&gt;Pretty row 21&lt;/li&gt;
+                    &lt;li&gt;Pretty row 22&lt;/li&gt;
+                    &lt;li&gt;Pretty row 23&lt;/li&gt;
+                    &lt;li&gt;Pretty row 24&lt;/li&gt;
+                    &lt;li&gt;Pretty row 25&lt;/li&gt;
+                    &lt;li&gt;Pretty row 26&lt;/li&gt;
+                    &lt;li&gt;Pretty row 27&lt;/li&gt;
+                    &lt;li&gt;Pretty row 28&lt;/li&gt;
+                    &lt;li&gt;Pretty row 29&lt;/li&gt;
+                    &lt;li&gt;Pretty row 30&lt;/li&gt;
+                    &lt;li&gt;Pretty row 31&lt;/li&gt;
+                    &lt;li&gt;Pretty row 32&lt;/li&gt;
+                    &lt;li&gt;Pretty row 33&lt;/li&gt;
+                    &lt;li&gt;Pretty row 34&lt;/li&gt;
+                    &lt;li&gt;Pretty row 35&lt;/li&gt;
+                    &lt;li&gt;Pretty row 36&lt;/li&gt;
+                    &lt;li&gt;Pretty row 37&lt;/li&gt;
+                    &lt;li&gt;Pretty row 38&lt;/li&gt;
+                    &lt;li&gt;Pretty row 39&lt;/li&gt;
+                    &lt;li&gt;Pretty row 40&lt;/li&gt;
+                    &lt;li&gt;Pretty row 41&lt;/li&gt;
+                    &lt;li&gt;Pretty row 42&lt;/li&gt;
+                    &lt;li&gt;Pretty row 43&lt;/li&gt;
+                    &lt;li&gt;Pretty row 44&lt;/li&gt;
+                    &lt;li&gt;Pretty row 45&lt;/li&gt;
+                    &lt;li&gt;Pretty row 46&lt;/li&gt;
+                    &lt;li&gt;Pretty row 47&lt;/li&gt;
+                    &lt;li&gt;Pretty row 48&lt;/li&gt;
+                    &lt;li&gt;Pretty row 49&lt;/li&gt;
+                    &lt;li&gt;Pretty row 50&lt;/li&gt;
+                &lt;/ul&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
 &lt;/template&gt;
 &lt;script&gt;
 import Hometitle from &#39;./common/hometitle.vue&#39;;
 import {
-    Circle,
+    Panel,
+    Pullrefresh,
     Button
 } from &#39;mvui&#39;;
 export default {
     components: {
         Hometitle,
-        Circle,
+        Pullrefresh,
         Button
     },
     data() {
         return {
-            percent: 10,
+            status: &#39;ready&#39;
         }
     },
     methods: {
-        add() {
-            if (this.percent &lt; 100) {
-                this.percent = this.percent + 10;
-            }
-        },
-        minus() {
-            if (this.percent &gt; 0) {
-                this.percent = this.percent - 10;
-            }
+        refreshFunc (e) {
+            let self = this;
+            setTimeout(function(){
+                self.status = &#39;ready&#39;;
+            }, 1000);
         }
     }
 }
 &lt;/script&gt;
-&lt;style lang=&quot;less&quot;&gt;
-.click-btn {
-    cursor: pointer;
+&lt;style&gt;
+header {
+    position: relative;
+    z-index: 100;
+}
+.wrapper-example-refresh-window .wrapper-area-content li {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: solid 1px #ccc;
+    padding-left: 0.1rem;
+    color: #666;
+}
+
+.wrapper-example-refresh-window .wrapper-area-content li: last-child {
+    border-bottom-width: 0px;
+}
+
+.wrapper-example-refresh-window .wrapper-area-content .wrapper-area {
+    padding: 0px;
+    margin: 0px;
+}
+&lt;/style&gt;
+</code></pre>
+<h3 id="某元素默认滚动条"><a href="#某元素默认滚动条" class="headerlink" title="某元素默认滚动条"></a>某元素默认滚动条</h3><pre><code class="html">&lt;template&gt;
+    &lt;div class=&quot;body-wrapper&quot;&gt;
+        &lt;Hometitle&gt;PullRefreshElem&lt;/Hometitle&gt;
+        &lt;div class=&quot;wrapper-example wrapper-example-refresh&quot;&gt;
+            &lt;div class=&quot;wrapper-area-content&quot; id=&quot;parent&quot;&gt;
+                &lt;Pullrefresh :status.sync=&quot;status&quot; @on-refresh=&quot;refreshFunc&quot;&gt;&lt;/Pullrefresh&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Pretty row 1&lt;/li&gt;
+                    &lt;li&gt;Pretty row 2&lt;/li&gt;
+                    &lt;li&gt;Pretty row 3&lt;/li&gt;
+                    &lt;li&gt;Pretty row 4&lt;/li&gt;
+                    &lt;li&gt;Pretty row 5&lt;/li&gt;
+                    &lt;li&gt;Pretty row 6&lt;/li&gt;
+                    &lt;li&gt;Pretty row 7&lt;/li&gt;
+                    &lt;li&gt;Pretty row 8&lt;/li&gt;
+                    &lt;li&gt;Pretty row 9&lt;/li&gt;
+                    &lt;li&gt;Pretty row 10&lt;/li&gt;
+                    &lt;li&gt;Pretty row 11&lt;/li&gt;
+                    &lt;li&gt;Pretty row 12&lt;/li&gt;
+                    &lt;li&gt;Pretty row 13&lt;/li&gt;
+                    &lt;li&gt;Pretty row 14&lt;/li&gt;
+                    &lt;li&gt;Pretty row 15&lt;/li&gt;
+                    &lt;li&gt;Pretty row 16&lt;/li&gt;
+                    &lt;li&gt;Pretty row 17&lt;/li&gt;
+                    &lt;li&gt;Pretty row 18&lt;/li&gt;
+                    &lt;li&gt;Pretty row 19&lt;/li&gt;
+                    &lt;li&gt;Pretty row 20&lt;/li&gt;
+                    &lt;li&gt;Pretty row 21&lt;/li&gt;
+                    &lt;li&gt;Pretty row 22&lt;/li&gt;
+                    &lt;li&gt;Pretty row 23&lt;/li&gt;
+                    &lt;li&gt;Pretty row 24&lt;/li&gt;
+                    &lt;li&gt;Pretty row 25&lt;/li&gt;
+                    &lt;li&gt;Pretty row 26&lt;/li&gt;
+                    &lt;li&gt;Pretty row 27&lt;/li&gt;
+                    &lt;li&gt;Pretty row 28&lt;/li&gt;
+                    &lt;li&gt;Pretty row 29&lt;/li&gt;
+                    &lt;li&gt;Pretty row 30&lt;/li&gt;
+                    &lt;li&gt;Pretty row 31&lt;/li&gt;
+                    &lt;li&gt;Pretty row 32&lt;/li&gt;
+                    &lt;li&gt;Pretty row 33&lt;/li&gt;
+                    &lt;li&gt;Pretty row 34&lt;/li&gt;
+                    &lt;li&gt;Pretty row 35&lt;/li&gt;
+                    &lt;li&gt;Pretty row 36&lt;/li&gt;
+                    &lt;li&gt;Pretty row 37&lt;/li&gt;
+                    &lt;li&gt;Pretty row 38&lt;/li&gt;
+                    &lt;li&gt;Pretty row 39&lt;/li&gt;
+                    &lt;li&gt;Pretty row 40&lt;/li&gt;
+                    &lt;li&gt;Pretty row 41&lt;/li&gt;
+                    &lt;li&gt;Pretty row 42&lt;/li&gt;
+                    &lt;li&gt;Pretty row 43&lt;/li&gt;
+                    &lt;li&gt;Pretty row 44&lt;/li&gt;
+                    &lt;li&gt;Pretty row 45&lt;/li&gt;
+                    &lt;li&gt;Pretty row 46&lt;/li&gt;
+                    &lt;li&gt;Pretty row 47&lt;/li&gt;
+                    &lt;li&gt;Pretty row 48&lt;/li&gt;
+                    &lt;li&gt;Pretty row 49&lt;/li&gt;
+                    &lt;li&gt;Pretty row 50&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Hometitle from &#39;./common/hometitle.vue&#39;;
+import {
+    Panel,
+    Pullrefresh,
+    Button
+} from &#39;mvui&#39;;
+export default {
+    components: {
+        Hometitle,
+        Pullrefresh,
+        Button
+    },
+    data() {
+        return {
+            status: &#39;ready&#39;
+        }
+    },
+    methods: {
+        refreshFunc (e) {
+            let self = this;
+            setTimeout(function(){
+                self.status = &#39;ready&#39;;
+            }, 1000);
+        }
+    }
+}
+&lt;/script&gt;
+&lt;style&gt;
+header {
+    position: relative;
+    z-index: 100;
+}
+.wrapper-example-refresh {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.45rem;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper-example-refresh .wrapper-area-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.wrapper-example-refresh .wrapper-area-content li {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: solid 1px #ccc;
+    padding-left: 0.1rem;
+    color: #666;
+}
+
+.wrapper-example-refresh .wrapper-area-content li: last-child {
+    border-bottom-width: 0px;
+}
+
+.wrapper-example-refresh .wrapper-area-content .wrapper-area {
+    padding: 0px;
+    margin: 0px;
+}
+&lt;/style&gt;
+</code></pre>
+<h3 id="scroll-滚动条"><a href="#scroll-滚动条" class="headerlink" title="scroll 滚动条"></a>scroll 滚动条</h3><pre><code class="html">&lt;template&gt;
+    &lt;div class=&quot;body-wrapper&quot;&gt;
+        &lt;Hometitle&gt;PullRefreshScroll&lt;/Hometitle&gt;
+        &lt;div class=&quot;wrapper-example wrapper-example-refresh-scroll&quot;&gt;
+            &lt;div class=&quot;wrapper-area-content&quot; id=&quot;parent&quot;&gt;
+                &lt;Scroll :pull-refresh=&quot;true&quot; @on-refresh=&quot;pullRefresh&quot; :refresh-status.sync=&quot;status&quot;&gt;
+                    &lt;div slot=&quot;down&quot;&gt;我是down按钮&lt;/div&gt;
+                    &lt;div slot=&quot;up&quot;&gt;我是up按钮&lt;/div&gt;
+                    &lt;div slot=&quot;load&quot;&gt;我是loadding&lt;/div&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Pretty row 1&lt;/li&gt;
+                        &lt;li&gt;Pretty row 2&lt;/li&gt;
+                        &lt;li&gt;Pretty row 3&lt;/li&gt;
+                        &lt;li&gt;Pretty row 4&lt;/li&gt;
+                        &lt;li&gt;Pretty row 5&lt;/li&gt;
+                        &lt;li&gt;Pretty row 6&lt;/li&gt;
+                        &lt;li&gt;Pretty row 7&lt;/li&gt;
+                        &lt;li&gt;Pretty row 8&lt;/li&gt;
+                        &lt;li&gt;Pretty row 9&lt;/li&gt;
+                        &lt;li&gt;Pretty row 10&lt;/li&gt;
+                        &lt;li&gt;Pretty row 11&lt;/li&gt;
+                        &lt;li&gt;Pretty row 12&lt;/li&gt;
+                        &lt;li&gt;Pretty row 13&lt;/li&gt;
+                        &lt;li&gt;Pretty row 14&lt;/li&gt;
+                        &lt;li&gt;Pretty row 15&lt;/li&gt;
+                        &lt;li&gt;Pretty row 16&lt;/li&gt;
+                        &lt;li&gt;Pretty row 17&lt;/li&gt;
+                        &lt;li&gt;Pretty row 18&lt;/li&gt;
+                        &lt;li&gt;Pretty row 19&lt;/li&gt;
+                        &lt;li&gt;Pretty row 20&lt;/li&gt;
+                        &lt;li&gt;Pretty row 21&lt;/li&gt;
+                        &lt;li&gt;Pretty row 22&lt;/li&gt;
+                        &lt;li&gt;Pretty row 23&lt;/li&gt;
+                        &lt;li&gt;Pretty row 24&lt;/li&gt;
+                        &lt;li&gt;Pretty row 25&lt;/li&gt;
+                        &lt;li&gt;Pretty row 26&lt;/li&gt;
+                        &lt;li&gt;Pretty row 27&lt;/li&gt;
+                        &lt;li&gt;Pretty row 28&lt;/li&gt;
+                        &lt;li&gt;Pretty row 29&lt;/li&gt;
+                        &lt;li&gt;Pretty row 30&lt;/li&gt;
+                        &lt;li&gt;Pretty row 31&lt;/li&gt;
+                        &lt;li&gt;Pretty row 32&lt;/li&gt;
+                        &lt;li&gt;Pretty row 33&lt;/li&gt;
+                        &lt;li&gt;Pretty row 34&lt;/li&gt;
+                        &lt;li&gt;Pretty row 35&lt;/li&gt;
+                        &lt;li&gt;Pretty row 36&lt;/li&gt;
+                        &lt;li&gt;Pretty row 37&lt;/li&gt;
+                        &lt;li&gt;Pretty row 38&lt;/li&gt;
+                        &lt;li&gt;Pretty row 39&lt;/li&gt;
+                        &lt;li&gt;Pretty row 40&lt;/li&gt;
+                        &lt;li&gt;Pretty row 41&lt;/li&gt;
+                        &lt;li&gt;Pretty row 42&lt;/li&gt;
+                        &lt;li&gt;Pretty row 43&lt;/li&gt;
+                        &lt;li&gt;Pretty row 44&lt;/li&gt;
+                        &lt;li&gt;Pretty row 45&lt;/li&gt;
+                        &lt;li&gt;Pretty row 46&lt;/li&gt;
+                        &lt;li&gt;Pretty row 47&lt;/li&gt;
+                        &lt;li&gt;Pretty row 48&lt;/li&gt;
+                        &lt;li&gt;Pretty row 49&lt;/li&gt;
+                        &lt;li&gt;Pretty row 50&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/Scroll&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import Hometitle from &#39;./common/hometitle.vue&#39;;
+import {
+    Panel,
+    Scroll,
+    Pullrefresh,
+    Button
+} from &#39;mvui&#39;;
+export default {
+    components: {
+        Hometitle,
+        Scroll,
+        Pullrefresh,
+        Button
+    },
+    data() {
+        return {
+            status: &#39;ready&#39;
+        }
+    },
+    methods: {
+        pullRefresh (e) {
+            let self = this;
+            setTimeout(function(){
+                self.status = &#39;ready&#39;;
+            }, 1000);
+        }
+    }
+}
+&lt;/script&gt;
+&lt;style&gt;
+header {
+    position: relative;
+    z-index: 100;
+}
+.wrapper-example-refresh-scroll {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.45rem;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper-example-refresh-scroll .wrapper-area-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper-example-refresh-scroll .wrapper-area-content li {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: solid 1px #ccc;
+    padding-left: 0.1rem;
+    color: #666;
+}
+
+.wrapper-example-refresh-scroll .wrapper-area-content li: last-child {
+    border-bottom-width: 0px;
+}
+
+.wrapper-example-refresh-scroll .wrapper-area-content .wrapper-area {
+    padding: 0px;
+    margin: 0px;
 }
 &lt;/style&gt;
 </code></pre>
@@ -362,45 +726,29 @@ export default {
 
           </div>
         </section>
-        
-          <div id="main-right">
-            <div id="main-right-iframe">
-              <iframe src="http://localhost:8080/#!/pullrefresh?hidetitle=true"></iframe>
-            </div>
-          </div>
-        
+
         
           <aside id="leftnav">
     
+    
+    
+    
+
+    
+    
         <div class="widget-wrap">
-            <div class="widget-title">View</div>
+            <div class="widget-title">Summary</div>
             <div class="widget">
                 <ul>
                     
                         
-                        <li><a href="/View/alert/">Alert 弹框</a></li>
-                        
-                    
-                        
-                    
-                        
-                        <li><a href="/View/collapse/">Collapse 折叠面板</a></li>
-                        
                     
                         
                     
                         
                     
                         
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                        <li><a href="/View/modal/">Modal 模态框</a></li>
+                        <li><a href="/mvui-page/Summary/desc/">Mvui介绍</a></li>
                         
                     
                         
@@ -414,7 +762,41 @@ export default {
                         
                     
                         
-                        <li><a href="/View/tip/">Tip 提示</a></li>
+                    
+                        
+                        <li><a href="/mvui-page/Summary/log/">更新日志</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/standard/">规范</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/start/">起步</a></li>
+                        
+                    
+                        
+                    
                         
                     
                 </ul>
@@ -429,7 +811,9 @@ export default {
                         
                     
                         
-                        <li><a href="/Basic/button/">Button 按钮</a></li>
+                    
+                        
+                        <li><a href="/mvui-page/Basic/button/">Button 按钮</a></li>
                         
                     
                         
@@ -441,7 +825,9 @@ export default {
                         
                     
                         
-                        <li><a href="/Basic/icon/">Icon 图标</a></li>
+                    
+                        
+                        <li><a href="/mvui-page/Basic/icon/">Icon 图标</a></li>
                         
                     
                         
@@ -452,6 +838,89 @@ export default {
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Form</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/checkbox/">Checkbox 多选框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/inputbox/">Inputbox 输入框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/radio/">Radio 单选框</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/selector/">Selector 选择框</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/switch/">Switch 开关</a></li>
                         
                     
                         
@@ -478,7 +947,11 @@ export default {
                         
                     
                         
-                        <li><a href="/Chart/circle/">Circle 进度环</a></li>
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Chart/circle/">Circle 进度环</a></li>
                         
                     
                         
@@ -494,7 +967,21 @@ export default {
                         
                     
                         
-                        <li><a href="/Chart/progress/">Progress 进度条</a></li>
+                        <li><a href="/mvui-page/Chart/progress/">Progress 进度条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -512,30 +999,16 @@ export default {
         </div>
     
         <div class="widget-wrap">
-            <div class="widget-title">Summary</div>
+            <div class="widget-title">View</div>
             <div class="widget">
                 <ul>
                     
                         
-                    
+                        <li><a href="/mvui-page/View/alert/">Alert 弹框</a></li>
                         
                     
                         
-                    
-                        
-                    
-                        
-                        <li><a href="/Summary/desc/">mVui介绍</a></li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                        <li><a href="/Summary/log/">更新日志</a></li>
+                        <li><a href="/mvui-page/View/accordion/">Accordion 折叠面板</a></li>
                         
                     
                         
@@ -547,11 +1020,43 @@ export default {
                         
                     
                         
-                        <li><a href="/Summary/standard/">规范</a></li>
+                    
                         
                     
                         
-                        <li><a href="/Summary/start/">起步</a></li>
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/View/modal/">Modal 模态框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/View/tip/">Tip 提示</a></li>
                         
                     
                         
@@ -576,15 +1081,9 @@ export default {
                         
                     
                         
-                        <li><a href="/Other/gotop/">gotop 回到顶部</a></li>
-                        
                     
                         
-                    
-                        
-                        <li><a href="/Other/loadding/">loadding 加载图标</a></li>
-                        
-                    
+                        <li><a href="/mvui-page/Other/gotop/">gotop 回到顶部</a></li>
                         
                     
                         
@@ -592,17 +1091,49 @@ export default {
                         
                     
                         
-                        <li><a href="/Other/pullrefresh/">pullrefresh 下拉刷新</a></li>
-                        
-                    
-                        
-                        <li><a href="/Other/pullload/">pullload 下拉加载</a></li>
+                        <li><a href="/mvui-page/Other/loadding/">loadding 加载图标</a></li>
                         
                     
                         
                     
                         
                     
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/page/">Page 分页</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/pullrefresh/">Pullrefresh 下拉刷新</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/pullload/">Pullload 下拉加载</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/slider/">Slider 轮播</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/scroll/">Scroll 滚动条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/uploader/">Uploader 上传</a></li>
                         
                     
                 </ul>
@@ -612,7 +1143,15 @@ export default {
 </aside>
 
         
+
       </div>
+      
+        <div id="main-right">
+          <div id="main-right-iframe">
+            <iframe src="http://localhost:8080/#!/pullRefresh?hidetitle=true"></iframe>
+          </div>
+        </div>
+      
       <footer id="footer">
   
   <div class="outer">
@@ -625,29 +1164,29 @@ export default {
     </div>
     <nav id="mobile-nav">
   
-    <a href="/Summary/desc/" class="mobile-nav-link">起步</a>
+    <a href="/mvui-page/mvui-page/Summary/desc/" class="mobile-nav-link">起步</a>
   
-    <a href="/Basic/icon/" class="mobile-nav-link">组件</a>
+    <a href="/mvui-page/mvui-page/Basic/icon/" class="mobile-nav-link">组件</a>
   
-    <a href="/example" class="mobile-nav-link">示例</a>
+    <a href="/mvui-page/mvui-page/example" class="mobile-nav-link">示例</a>
   
     <a href="https://github.com/GreatBoy/mvui" class="mobile-nav-link">github</a>
   
 </nav>
     
 
-<script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/mvui-page/js/jquery-2.0.3.min.js"></script>
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/mvui-page/fancybox/jquery.fancybox.css">
+  <script src="/mvui-page/fancybox/jquery.fancybox.pack.js"></script>
 
-<script src="/js/vivus.min.js"></script>
-<script src="/js/highlight.min.js"></script>
+<script src="/mvui-page/js/vivus.min.js"></script>
+<script src="/mvui-page/js/highlight.min.js"></script>
 <script>
   // highlight
  hljs.initHighlightingOnLoad();
 </script>
-<script src="/js/script.js"></script>
+<script src="/mvui-page/js/script.js"></script>
 
   </div>
 </body>

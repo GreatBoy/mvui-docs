@@ -5,27 +5,30 @@
   
   <title>Circle 进度环 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Circle 进度环通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgColor（背">
+  <meta name="description" content="Circle 进度环通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Circle 进度环">
-<meta property="og:url" content="http://yoursite.com/Chart/circle/index.html">
+<meta property="og:url" content="http://greatboy.github.io/mvui-page/Chart/circle/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Circle 进度环通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgColor（背">
-<meta property="og:updated_time" content="2016-10-28T03:36:50.000Z">
+<meta property="og:description" content="Circle 进度环通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor">
+<meta property="og:updated_time" content="2016-11-23T01:57:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Circle 进度环">
-<meta name="twitter:description" content="Circle 进度环通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串注意：变量需要在class前面加冒号（：）， 示例子概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgColor（背">
+<meta name="twitter:description" content="Circle 进度环通用参数所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”概述circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="/mvui-page/images/favicon.ico" type="image/x-icon">
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/mvui-page/css/style.css">
   
 
   <style>
+    #main-right iframe{
+      height: 512px;
+    }
     #mobile-nav{
       display: none;
     }
@@ -139,7 +142,7 @@
   <div id="header-outer" class="outer">
     <div id="header-inner" class="inner">
       <div id="main-logo">
-        <a href="/"><img class="main-logo-img" src="/images/mvui/Mvui-02.png"/></a>
+        <a href="/"><img class="main-logo-img" src="/mvui-page/images/mvui/Mvui-02.png"/></a>
         <svg height="0" id="obturateur1" xmlns="http://www.w3.org/2000/svg" version="1.1">
              <path d="M 5 50 q 15 -50 25 0 q 25 -50 35 0 M 60 0 q 70 50 60 0" stroke="#42b983" stroke-width="3" fill="none" />
         </svg>
@@ -148,11 +151,11 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
-          <a class="main-nav-link" href="/Summary/desc/">起步</a>
+          <a class="main-nav-link" href="/mvui-page/mvui-page/Summary/desc/">起步</a>
         
-          <a class="main-nav-link" href="/Basic/icon/">组件</a>
+          <a class="main-nav-link" href="/mvui-page/mvui-page/Basic/icon/">组件</a>
         
-          <a class="main-nav-link" href="/example">示例</a>
+          <a class="main-nav-link" href="/mvui-page/mvui-page/example">示例</a>
         
           <a class="main-nav-link" href="https://github.com/GreatBoy/mvui">github</a>
         
@@ -170,7 +173,7 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Circle-进度环"><a href="#Circle-进度环" class="headerlink" title="Circle 进度环"></a>Circle 进度环</h1><h2 id="通用参数"><a href="#通用参数" class="headerlink" title="通用参数"></a>通用参数</h2><h6 id="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"><a href="#所有组件均支持class和style属性，class可以是vue变量也可以是字符串" class="headerlink" title="所有组件均支持class和style属性，class可以是vue变量也可以是字符串"></a>所有组件均支持class和style属性，class可以是vue变量也可以是字符串</h6><h6 id="注意：变量需要在class前面加冒号（：），-示例子"><a href="#注意：变量需要在class前面加冒号（：），-示例子" class="headerlink" title="注意：变量需要在class前面加冒号（：）， 示例子"></a>注意：变量需要在class前面加冒号（：）， 示例子</h6><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgColor（背景环颜色）</p>
+        <h1 id="Circle-进度环"><a href="#Circle-进度环" class="headerlink" title="Circle 进度环"></a>Circle 进度环</h1><h2 id="通用参数"><a href="#通用参数" class="headerlink" title="通用参数"></a>通用参数</h2><h6 id="所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象"><a href="#所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象" class="headerlink" title="所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象"></a>所有组件均支持class和style属性，class可以是vue变量也可以是字符串，style可以是字符串或者对象</h6><h6 id="注：如果是变量需要在class前面加冒号-例如-class-”mv-button”"><a href="#注：如果是变量需要在class前面加冒号-例如-class-”mv-button”" class="headerlink" title="注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”"></a>注：如果是变量需要在class前面加冒号,例如 :class=”mv-button”</h6><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>circle 可以自定义通用属性class和style，以及percent（百分比），size（进度换大小），strokeWidth（进度环宽度），strokeColor（进度环颜色），bgWidth（背景环宽度），bgColor（背景环颜色）</p>
 <h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><pre><code class="html">&lt;template&gt;
    &lt;Circle :percent.sync=&quot;10&quot; :stroke-width=&quot;15&quot; stroke-color=&quot;#ff4081&quot;&gt;&lt;/Circle&gt; 
 &lt;/template&gt;
@@ -185,7 +188,7 @@ export default {
 } 
 &lt;/script&gt;
 </code></pre>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Icon props</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Circle props</p>
 <table>
 <thead>
 <tr>
@@ -362,45 +365,29 @@ export default {
 
           </div>
         </section>
-        
-          <div id="main-right">
-            <div id="main-right-iframe">
-              <iframe src="http://localhost:8080/#!/circle?hidetitle=true"></iframe>
-            </div>
-          </div>
-        
+
         
           <aside id="leftnav">
     
+    
+    
+    
+
+    
+    
         <div class="widget-wrap">
-            <div class="widget-title">View</div>
+            <div class="widget-title">Summary</div>
             <div class="widget">
                 <ul>
                     
                         
-                        <li><a href="/View/alert/">Alert 弹框</a></li>
-                        
-                    
-                        
-                    
-                        
-                        <li><a href="/View/collapse/">Collapse 折叠面板</a></li>
-                        
                     
                         
                     
                         
                     
                         
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                        <li><a href="/View/modal/">Modal 模态框</a></li>
+                        <li><a href="/mvui-page/Summary/desc/">Mvui介绍</a></li>
                         
                     
                         
@@ -414,7 +401,41 @@ export default {
                         
                     
                         
-                        <li><a href="/View/tip/">Tip 提示</a></li>
+                    
+                        
+                        <li><a href="/mvui-page/Summary/log/">更新日志</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/standard/">规范</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Summary/start/">起步</a></li>
+                        
+                    
+                        
+                    
                         
                     
                 </ul>
@@ -429,7 +450,9 @@ export default {
                         
                     
                         
-                        <li><a href="/Basic/button/">Button 按钮</a></li>
+                    
+                        
+                        <li><a href="/mvui-page/Basic/button/">Button 按钮</a></li>
                         
                     
                         
@@ -441,7 +464,9 @@ export default {
                         
                     
                         
-                        <li><a href="/Basic/icon/">Icon 图标</a></li>
+                    
+                        
+                        <li><a href="/mvui-page/Basic/icon/">Icon 图标</a></li>
                         
                     
                         
@@ -452,6 +477,89 @@ export default {
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div class="widget-wrap">
+            <div class="widget-title">Form</div>
+            <div class="widget">
+                <ul>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/checkbox/">Checkbox 多选框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/inputbox/">Inputbox 输入框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/radio/">Radio 单选框</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/selector/">Selector 选择框</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Form/switch/">Switch 开关</a></li>
                         
                     
                         
@@ -478,7 +586,11 @@ export default {
                         
                     
                         
-                        <li><a href="/Chart/circle/">Circle 进度环</a></li>
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Chart/circle/">Circle 进度环</a></li>
                         
                     
                         
@@ -494,7 +606,21 @@ export default {
                         
                     
                         
-                        <li><a href="/Chart/progress/">Progress 进度条</a></li>
+                        <li><a href="/mvui-page/Chart/progress/">Progress 进度条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -512,30 +638,16 @@ export default {
         </div>
     
         <div class="widget-wrap">
-            <div class="widget-title">Summary</div>
+            <div class="widget-title">View</div>
             <div class="widget">
                 <ul>
                     
                         
-                    
+                        <li><a href="/mvui-page/View/alert/">Alert 弹框</a></li>
                         
                     
                         
-                    
-                        
-                    
-                        
-                        <li><a href="/Summary/desc/">mVui介绍</a></li>
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                        <li><a href="/Summary/log/">更新日志</a></li>
+                        <li><a href="/mvui-page/View/accordion/">Accordion 折叠面板</a></li>
                         
                     
                         
@@ -547,11 +659,43 @@ export default {
                         
                     
                         
-                        <li><a href="/Summary/standard/">规范</a></li>
+                    
                         
                     
                         
-                        <li><a href="/Summary/start/">起步</a></li>
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/View/modal/">Modal 模态框</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/View/tip/">Tip 提示</a></li>
                         
                     
                         
@@ -576,15 +720,9 @@ export default {
                         
                     
                         
-                        <li><a href="/Other/gotop/">gotop 回到顶部</a></li>
-                        
                     
                         
-                    
-                        
-                        <li><a href="/Other/loadding/">loadding 加载图标</a></li>
-                        
-                    
+                        <li><a href="/mvui-page/Other/gotop/">gotop 回到顶部</a></li>
                         
                     
                         
@@ -592,17 +730,49 @@ export default {
                         
                     
                         
-                        <li><a href="/Other/pullrefresh/">pullrefresh 下拉刷新</a></li>
-                        
-                    
-                        
-                        <li><a href="/Other/pullload/">pullload 下拉加载</a></li>
+                        <li><a href="/mvui-page/Other/loadding/">loadding 加载图标</a></li>
                         
                     
                         
                     
                         
                     
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/page/">Page 分页</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/pullrefresh/">Pullrefresh 下拉刷新</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/pullload/">Pullload 下拉加载</a></li>
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/slider/">Slider 轮播</a></li>
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/scroll/">Scroll 滚动条</a></li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li><a href="/mvui-page/Other/uploader/">Uploader 上传</a></li>
                         
                     
                 </ul>
@@ -612,7 +782,15 @@ export default {
 </aside>
 
         
+
       </div>
+      
+        <div id="main-right">
+          <div id="main-right-iframe">
+            <iframe src="http://localhost:8080/#!/circle?hidetitle=true"></iframe>
+          </div>
+        </div>
+      
       <footer id="footer">
   
   <div class="outer">
@@ -625,29 +803,29 @@ export default {
     </div>
     <nav id="mobile-nav">
   
-    <a href="/Summary/desc/" class="mobile-nav-link">起步</a>
+    <a href="/mvui-page/mvui-page/Summary/desc/" class="mobile-nav-link">起步</a>
   
-    <a href="/Basic/icon/" class="mobile-nav-link">组件</a>
+    <a href="/mvui-page/mvui-page/Basic/icon/" class="mobile-nav-link">组件</a>
   
-    <a href="/example" class="mobile-nav-link">示例</a>
+    <a href="/mvui-page/mvui-page/example" class="mobile-nav-link">示例</a>
   
     <a href="https://github.com/GreatBoy/mvui" class="mobile-nav-link">github</a>
   
 </nav>
     
 
-<script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/mvui-page/js/jquery-2.0.3.min.js"></script>
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="/mvui-page/fancybox/jquery.fancybox.css">
+  <script src="/mvui-page/fancybox/jquery.fancybox.pack.js"></script>
 
-<script src="/js/vivus.min.js"></script>
-<script src="/js/highlight.min.js"></script>
+<script src="/mvui-page/js/vivus.min.js"></script>
+<script src="/mvui-page/js/highlight.min.js"></script>
 <script>
   // highlight
  hljs.initHighlightingOnLoad();
 </script>
-<script src="/js/script.js"></script>
+<script src="/mvui-page/js/script.js"></script>
 
   </div>
 </body>
