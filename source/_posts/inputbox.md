@@ -1,7 +1,7 @@
 ---
 title: Inputbox 输入框
 date: 2016-10-19 15:25:24
-tags: http://localhost:8080/#!/inputbox?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/inputbox?hidetitle=true
 categories:
 - Form
 ---

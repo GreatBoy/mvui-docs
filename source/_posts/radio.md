@@ -1,7 +1,7 @@
 ---
 title: Radio 单选框
 date: 2016-10-19 15:25:24
-tags: http://localhost:8080/#!/radio?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/radio?hidetitle=true
 categories:
 - Form
 ---

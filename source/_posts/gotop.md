@@ -1,7 +1,7 @@
 ---
 title: gotop 回到顶部
 date: 2016-10-19 15:25:57
-tags: http://localhost:8080/#!/gotop?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/gotop?hidetitle=true
 categories:
 - Other
 ---

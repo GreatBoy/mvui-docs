@@ -1,7 +1,7 @@
 ---
 title: loadding 加载图标
 date: 2016-10-19 15:25:57
-tags: http://localhost:8080/#!/loadding?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/loadding?hidetitle=true
 categories:
 - Other
 ---

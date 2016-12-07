@@ -1,7 +1,7 @@
 ---
 title: Alert 弹框
 date: 2016-10-19 15:25:42
-tags: http://localhost:8080/#!/alert?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/alert?hidetitle=true
 categories:
 - View
 ---

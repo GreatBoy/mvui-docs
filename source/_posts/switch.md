@@ -1,7 +1,7 @@
 ---
 title: Switch 开关
 date: 2016-10-19 15:25:24
-tags: http://localhost:8080/#!/switch?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/switch?hidetitle=true
 categories:
 - Form
 ---

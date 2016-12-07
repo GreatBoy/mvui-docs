@@ -1,7 +1,7 @@
 ---
 title: Page 分页
 date: 2016-10-19 15:25:57
-tags: http://localhost:8080/#!/page?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/page?hidetitle=true
 categories:
 - Other
 ---

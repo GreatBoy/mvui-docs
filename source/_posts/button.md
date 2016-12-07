@@ -1,7 +1,7 @@
 ---
 title: Button 按钮
 date: 2016-10-19 15:25:24
-tags: http://localhost:8080/#!/button?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/button?hidetitle=true
 categories:
 - Basic
 ---

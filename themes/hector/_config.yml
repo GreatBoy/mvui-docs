@@ -2,7 +2,7 @@
 menu:
   起步: /Summary/desc/
   组件: /Basic/icon/
-  示例: /example
+  示例: https://greatboy.github.io/mvui-example/
   github: https://github.com/GreatBoy/mvui
 rss: /atom.xml
 

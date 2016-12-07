@@ -1,7 +1,7 @@
 ---
 title: Pullload 下拉加载
 date: 2016-10-19 15:25:24
-tags: http://localhost:8080/#!/pullLoad?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/pullLoad?hidetitle=true
 categories:
 - Other
 ---

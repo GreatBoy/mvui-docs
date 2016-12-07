@@ -2,7 +2,7 @@
 title: Icon 图标
 date: 2016-10-18 17:25:16
 tags: 
-- http://localhost:8080/#!/icon?hidetitle=true
+- https://greatboy.github.io/mvui-example/#!/icon?hidetitle=true
 categories:
 - Basic
 ---

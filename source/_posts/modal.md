@@ -1,7 +1,7 @@
 ---
 title: Modal 模态框
 date: 2016-10-19 15:25:42
-tags: http://localhost:8080/#!/modal?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/modal?hidetitle=true
 categories:
 - View
 ---

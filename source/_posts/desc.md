@@ -2,7 +2,7 @@
 title: Mvui介绍
 date: 2016-10-18 17:25:16
 tags: 
-- http://localhost:8080/#!/home
+- https://greatboy.github.io/mvui-example/#!/home
 categories:
 - Summary
 ---

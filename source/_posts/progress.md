@@ -1,7 +1,7 @@
 ---
 title: Progress 进度条
 date: 2016-10-19 15:25:24
-tags: http://localhost:8080/#!/progress?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/progress?hidetitle=true
 categories:
 - Chart
 ---

@@ -1,7 +1,7 @@
 ---
 title: Accordion 折叠面板
 date: 2016-10-19 15:25:42
-tags: http://localhost:8080/#!/accordion?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/accordion?hidetitle=true
 categories:
 - View
 ---

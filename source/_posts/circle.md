@@ -1,7 +1,7 @@
 ---
 title: Circle 进度环
 date: 2016-10-19 15:25:24
-tags: http://localhost:8080/#!/circle?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/circle?hidetitle=true
 categories:
 - Chart
 ---

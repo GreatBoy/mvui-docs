@@ -1,7 +1,7 @@
 ---
 title: Tip 提示
 date: 2016-10-19 15:25:46
-tags: http://localhost:8080/#!/tip?hidetitle=true
+tags: https://greatboy.github.io/mvui-example/#!/tip?hidetitle=true
 categories:
 - View
 ---
